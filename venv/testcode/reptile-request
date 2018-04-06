@@ -1,0 +1,251 @@
+
+小规模：Request库 >90%
+中规模：Scrapy库
+大规模:定制开发
+
+r = requests.get(url) #构造一个向服务器请求资源的Request对象
+'''
+get方法返回一个包含服务器资源的Response对象
+requestes.get(url,params=None,**kwargs)
+url 拟获取页面的url链接
+params url中的额外参数，字典或字节流格式，可选
+**kwargs 12个控制访问的参数
+'''
+
+>>> dir(requests)
+['ConnectTimeout', 'ConnectionError', 'DependencyWarning', 'FileModeWarning
+', 'HTTPError', 'NullHandler', 'PreparedRequest', 'ReadTimeout', 'Request',
+ 'RequestException', 'RequestsDependencyWarning', 'Response', 'Session', 'T
+imeout', 'TooManyRedirects', 'URLRequired', '__author__', '__author_email__
+', '__build__', '__builtins__', '__cached__', '__cake__', '__copyright__',
+'__description__', '__doc__', '__file__', '__license__', '__loader__', '__n
+ame__', '__package__', '__path__', '__spec__', '__title__', '__url__', '__v
+ersion__', '_internal_utils', 'adapters', 'api', 'auth', 'certs', 'chardet'
+, 'check_compatibility', 'codes', 'compat', 'cookies', 'delete', 'exception
+s', 'get', 'head', 'hooks', 'logging', 'models', 'options', 'packages', 'pa
+tch', 'post', 'put', 'request', 'session', 'sessions', 'status_codes', 'str
+uctures', 'urllib3', 'utils', 'warnings']
+
+#Response对象
+dir(requests.Response)
+['__attrs__', '__bool__', '__class__', '__delattr__', '__dict__',
+'__dir__', '__doc__', '__enter__', '__eq__', '__exit__', '__format__',
+'__ge__', '__getattribute__', '__getstate__', '__gt__', '__hash__',
+'__init__', '__init_subclass__', '__iter__', '__le__', '__lt__',
+'__module__', '__ne__', '__new__', '__nonzero__', '__reduce__',
+'__reduce_ex__', '__repr__', '__setattr__', '__setstate__', '__sizeof__',
+'__str__', '__subclasshook__', '__weakref__',
+'apparent_encoding','close', 'content', 'is_permanent_redirect',
+'is_redirect', 'iter_content','iter_lines', 'json', 'links', 'next',
+'ok', 'raise_for_status', 'text']
+
+r.status_code HTTP请求返回状态，200表示连接成功，404表示访问的资源不存在
+r.text HTTP响应内容的字符串形式
+r.encoding HTTP响应内容的编码方式（猜测）
+r.apparent_encoding HTTP响应内容的编码方式
+r.content HTTP响应内容的二进制形式
+
+http协议方法    Requests库方法
+                requests.request()  #构造一个请求，支撑以下各方法的基础方法
+GET             requests.get()      #获取HTML网页的主要方法，对应于HTTP的GET
+HEAD            requests.head()     #获取HTML网页头信息的方法，对应于HTTP的HEAD
+POST            requests.post()     #向HTML网页提交POST请求的方法，对应于HTTP的POST
+PUT             requests.put()      #向HTML网页提交PUT请求的方法，对应于HTTP的PUT
+PATCH           requests.patch()    #向HTML网页提交局部修改请求，对应于HTTP的PATCH
+DELETE          requests.delete()   #向HTML网页提交删除请求，对应于HTTP的DELETE
+
+
+requests.request(method,url,**kwargs)
+    method 请求方式，对应get/head/put/post/patch/delete/OPTIONS等7种
+    **kwargs 13个访问控制参数，都是可选项
+        params:字典或字节序列，作为参数增加到url中
+        例：
+            kv = {"key1":"va11","key2":"val2"}
+            r = requests.request('GET','http://python123.io/ws',params = kv)
+            r.url
+            'https://python123.io/ws?key1=va11&key2=val2'
+        data:字典、字节序列或文件对象，作为Request的内容
+        例：
+        json:
+        headers:字典，HTTP头字段
+        ===================以上为常用参数===================
+        cookies:字典或CookieJar，Request中的cookie
+        auth:元组，支持HTTP认证功能
+        files:字典类型，传输文件
+        timeout:设定超时时间，秒为单位
+        proxies:字典，设定访问代理服务器，可以增加登录认证
+        例：
+        allow_redirects: True/False ，默认为True，重定向开关
+        stream:True/False,默认为True，获取内容产即下载开关
+        verify:True/False,默认为True，认证SSL证书开关
+        cert:本地SSL证书路径
+
+
+
+例：
+import requests
+r = requests.head("http://www.bilibili.com")
+r.headers
+{'Server': 'Tengine', 'Date': 'Sun, 01 Apr 2018 12:25:25 GMT', 'Content-Type': 'text/html', 'Content-Length': '278', 'Connection': 'keep-alive', 'Location': 'https://www.bilibili.com/'}
+r.text
+''# 内容为空
+
+例：
+payload = {'key1':'data1','key2':'data2'}
+r = requests.post("http://httpbin.org/post",data = payload)
+print(r.text)
+{
+  "args": {},
+  "data": "",
+  "files": {},
+  "form": {
+    "key1": "data1",
+    "key2": "data2"
+  },
+  "headers": {
+    "Accept": "*/*",
+    "Accept-Encoding": "gzip, deflate",
+    "Connection": "close",
+    "Content-Length": "21",
+    "Content-Type": "application/x-www-form-urlencoded",
+    "Host": "httpbin.org",
+    "User-Agent": "python-requests/2.18.4"
+  },
+  "json": null,
+  "origin": "119.123.131.57",
+  "url": "http://httpbin.org/post"
+}
+
+
+
+help(requests.Response)
+Help on class Response in module requests.models:
+class Response(builtins.object)
+ |  The :class:`Response <Response>` object, which contains a
+ |  server's response to an HTTP request.
+ |
+ |  Methods defined here:
+ |
+ |  __bool__(self)
+ |      Returns True if :attr:`status_code` is less than 400.
+ |
+ |      This attribute checks if the status code of the response is between
+ |      400 and 600 to see if there was a client error or a server error. If
+ |      the status code, is between 200 and 400, this will return True. This
+ |      is **not** a check to see if the response code is ``200 OK``.
+ |
+ |  __enter__(self)
+ |
+ |  __exit__(self, *args)
+ |
+ |  __getstate__(self)
+ |
+ |  __init__(self)
+ |      Initialize self.  See help(type(self)) for accurate signature.
+ |
+ |  __iter__(self)
+ |      Allows you to use a response as an iterator.
+ |
+ |  __nonzero__(self)
+ |      Returns True if :attr:`status_code` is less than 400.
+ |
+ |      This attribute checks if the status code of the response is between
+ |      400 and 600 to see if there was a client error or a server error. If
+ |      the status code, is between 200 and 400, this will return True. This
+ |      is **not** a check to see if the response code is ``200 OK``.
+ |
+ |  __repr__(self)
+ |      Return repr(self).
+ |
+ |  __setstate__(self, state)
+ |
+ |  close(self)
+ |      Releases the connection back to the pool. Once this method has been
+ |      called the underlying ``raw`` object must not be accessed again.
+ |
+ |      *Note: Should not normally need to be called explicitly.*
+ |
+ |  iter_content(self, chunk_size=1, decode_unicode=False)
+ |      Iterates over the response data.  When stream=True is set on the
+ |      request, this avoids reading the content at once into memory for
+ |      large responses.  The chunk size is the number of bytes it should
+ |      read into memory.  This is not necessarily the length of each item
+ |      returned as decoding can take place.
+ |
+ |      chunk_size must be of type int or None. A value of None will
+ |      function differently depending on the value of `stream`.
+ |      stream=True will read data as it arrives in whatever size the
+ |      chunks are received. If stream=False, data is returned as
+ |      a single chunk.
+ |
+ |      If decode_unicode is True, content will be decoded using the best
+ |      available encoding based on the response.
+ |
+ |  iter_lines(self, chunk_size=512, decode_unicode=None, delimiter=None)
+ |      Iterates over the response data, one line at a time.  When
+ |      stream=True is set on the request, this avoids reading the
+ |      content at once into memory for large responses.
+ |
+ |      .. note:: This method is not reentrant safe.
+ |
+ |  json(self, **kwargs)
+ |      Returns the json-encoded content of a response, if any.
+ |
+ |      :param \*\*kwargs: Optional arguments that ``json.loads`` takes.
+ |      :raises ValueError: If the response body does not contain valid json.
+ |
+ |  raise_for_status(self)
+ |      Raises stored :class:`HTTPError`, if one occurred.
+ |
+ |  ----------------------------------------------------------------------
+ |  Data descriptors defined here:
+ |
+ |  __dict__
+ |      dictionary for instance variables (if defined)
+ |
+ |  __weakref__
+ |      list of weak references to the object (if defined)
+ |
+ |  apparent_encoding
+ |      The apparent encoding, provided by the chardet library.
+ |
+ |  content
+ |      Content of the response, in bytes.
+ |
+ |  is_permanent_redirect
+ |      True if this Response one of the permanent versions of redirect.
+ |
+ |  is_redirect
+ |      True if this Response is a well-formed HTTP redirect that could have
+ |      been processed automatically (by :meth:`Session.resolve_redirects`).
+ |
+ |  links
+ |      Returns the parsed header links of the response, if any.
+ |
+ |  next
+ |      Returns a PreparedRequest for the next request in a redirect chain, if there is one.
+ |
+ |  ok
+ |      Returns True if :attr:`status_code` is less than 400.
+ |
+ |      This attribute checks if the status code of the response is between
+ |      400 and 600 to see if there was a client error or a server error. If
+ |      the status code, is between 200 and 400, this will return True. This
+ |      is **not** a check to see if the response code is ``200 OK``.
+ |
+ |  text
+ |      Content of the response, in unicode.
+ |
+ |      If Response.encoding is None, encoding will be guessed using
+ |      ``chardet``.
+ |
+ |      The encoding of the response content is determined based solely on HTTP
+ |      headers, following RFC 2616 to the letter. If you can take advantage of
+ |      non-HTTP knowledge to make a better guess at the encoding, you should
+ |      set ``r.encoding`` appropriately before accessing this property.
+ |
+ |  ----------------------------------------------------------------------
+ |  Data and other attributes defined here:
+ |
+ |  __attrs__ = ['_content', 'status_code', 'headers', 'url', 'history', '...
+

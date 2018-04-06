@@ -1,0 +1,90 @@
+京东的Robots协议
+https://www.jd.com/robots.txt
+
+User-agent: *
+Disallow: /?*
+Disallow: /pop/*.html
+Disallow: /pinpai/*.html?*
+User-agent: EtaoSpider
+Disallow: /
+User-agent: HuihuiSpider
+Disallow: /
+User-agent: GwdangSpider
+Disallow: /
+User-agent: WochachaSpider
+Disallow: /
+
+哔哩哔哩的Robots协议
+https://www.bilibili.com/robots.txt
+
+User-agent: *
+Disallow: /include/
+Disallow: /mylist/
+Disallow: /member/
+Disallow: /images/
+Disallow: /ass/
+Disallow: /getapi
+Disallow: /search
+Disallow: /account
+Disallow: /badlist.html
+Disallow: /m/
+
+
+淘宝的Robots协议
+http://www.taobao.com/robots.txt
+User-agent:  Baiduspider
+Allow:  /article
+Allow:  /oshtml
+Disallow:  /product/
+Disallow:  /
+
+User-Agent:  Googlebot
+Allow:  /article
+Allow:  /oshtml
+Allow:  /product
+Allow:  /spu
+Allow:  /dianpu
+Allow:  /oversea
+Allow:  /list
+Disallow:  /
+
+User-agent:  Bingbot
+Allow:  /article
+Allow:  /oshtml
+Allow:  /product
+Allow:  /spu
+Allow:  /dianpu
+Allow:  /oversea
+Allow:  /list
+Disallow:  /
+
+User-Agent:  360Spider
+Allow:  /article
+Allow:  /oshtml
+Disallow:  /
+
+User-Agent:  Yisouspider
+Allow:  /article
+Allow:  /oshtml
+Disallow:  /
+
+User-Agent:  Sogouspider
+Allow:  /article
+Allow:  /oshtml
+Allow:  /product
+Disallow:  /
+
+User-Agent:  Yahoo!  Slurp
+Allow:  /product
+Allow:  /spu
+Allow:  /dianpu
+Allow:  /oversea
+Allow:  /list
+Disallow:  /
+
+User-Agent:  *
+Disallow:  /
+
+
+Robots协议的使用：
+自动或人工识别robots.txt
