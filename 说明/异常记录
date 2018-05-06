@@ -1,2 +1,4 @@
 1、python3.x 在读取txt文件时出现错误：UnicodeDecodeError: 'utf-8' codec can't decode byte 0xcd in position 0: invalid continuation byte
 A：绝大部分情况是因为文件不是 UTF8 编码的（例如，可能是 GBK 编码的），而系统默认采用 UTF8 解码。解决方法是改为对应的解码方式。
+
+20180506更改了GitHub密码为，记录于邮箱lywtesting@163.com
