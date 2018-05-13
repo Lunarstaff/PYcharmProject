@@ -1,0 +1,38 @@
+在Windows 命令行执行 pip install wordcloud 安装wordcloud库时，会提示：“microsoft visual c++ 14.0 is required”，安装失败。
+这时，需要手动安装。
+
+    -手动在Windows下安装第三方库：（以安装wordcloud库为例）
+        -在“https://www.lfd.uci.edu/~gohlke/pythonlibs/”下载与自己系统对应版本的库whl文件：
+            比如，我的系统为Wind10，64位系统，安装的Python版本为Py36
+            所以下载的“wordcloud‑1.4.1‑cp36‑cp36m‑win_amd64.whl”文件。
+        -把“库.whl”文件放在Windows中，Python的安装路径下（里面有pip.exe）：
+            C:\Program Files\Python36\Scripts
+        -在Windows命令行中，先把当前目录切到，刚才whl文件所以目录下，再执行“./pip install wordcloud‑1.4.1‑cp36‑cp36m‑win_amd64.whl”
+        -等执行结束，即安装成功
+
+在Pycharm项目解释器安装第三方库wordcloud时，提示：
+【
+Traceback (most recent call last):
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2017.3.4\helpers\packaging_tool.py", line 192, in main
+    retcode = do_install(pkgs)
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2017.3.4\helpers\packaging_tool.py", line 109, in do_install
+    return pip.main(['install'] + pkgs)
+AttributeError: module 'pip' has no attribute 'main'
+】
+这时也需要手动给这个项目安装第三方库：
+
+    -手动给Pycharm项目解释器添加第三方库：（以添加wordcloud库为例）
+        -在“https://www.lfd.uci.edu/~gohlke/pythonlibs/”下载与自己系统对应版本的库whl文件：
+            比如，我的系统为Wind10，64位系统，安装的Python版本为Py36
+            所以下载的“wordcloud‑1.4.1‑cp36‑cp36m‑win_amd64.whl”文件。
+        -*把“库.whl”文件放在Pycharm项目解释器路径下（里面有pip.exe）：
+            C:\E-Data-File\腾讯课堂\Python入门\PYcharmProject\venv\Scripts
+        -在Windows命令行中，先把当前目录切到，刚才whl文件所以目录下，再执行“./pip install wordcloud‑1.4.1‑cp36‑cp36m‑win_amd64.whl”
+        -等执行结束，即安装成功
+        -可以以Pycharm项目设置中检查已安装的第三方库。
+            File->Settings->Project:PYcharmProject->Project Interpreter:
+
+-参考文章：
+    -Py库：https://www.lfd.uci.edu/~gohlke/pythonlibs/
+    -百度：https://zhidao.baidu.com/question/1759683643504366268.html
+    -博客园：https://www.cnblogs.com/csj007523/p/7997843.html
