@@ -63,11 +63,42 @@ wordclout 库常规方法：
                     >>> w = wordcloud.WordCloud（mask = mk）
         -background_color   指定词云图片的背景颜色，默认为黑色
                             例：>>> w = wordcloud.WordCloud（background_color = "white"）
+#例2：
+    import wordcloud
+    txt = "life is short, you need python"
+    w = wordcloud.WordCloud(background_color="white")
+    w.generate(txt)
+    w.to_file("./testfiles/pywcloud.png")
+
+#例3：
+    import jieba
+    import wordcloud
+    #获取文本
+    file_txt = "C:\\E-Data-File\\腾讯课堂\\Python入门\\PYcharmProject\\venv\\testcode\\词频统计\\四川航空.txt"
+    ft = open(file_txt,"r",encoding="utf-8")
+    file_text_line1 = ft.read()
+    ft.close()
+    #生成词云
+    w = wordcloud.WordCloud(width=1000,font_path="msyh.ttc",height=700,background_color="white")
+    #加载一段有空格分词的文本
+    w.generate(" ".join(jieba.lcut(file_text_line1)))
+    w.to_file("./testfiles/四川航空_white.png")
+
+#例4
+    #政府工作报告词云
+    import jieba
+    import wordcloud
+    f_file1 = "./testfiles/语音识别故障.txt" #定义文件路径
+    #f_file2 = "./testfiles/新时代中国特色社会主义.txt"
+    file_open = open(f_file1,"r",encoding="utf-8")  #打开文件
+    file_text = file_open.read()                    #把文件文本内容读出
+    file_open.close()                               #关闭文件
+    file_text_ls = jieba.lcut(file_text)            #将文本内容分词为列表
+    file_to_wordcloud = " ".join(file_text_ls)      #将列表中的元素以空格分开为字符串
+    #创建词云并设置参数
+    w = wordcloud.WordCloud(font_path="msyh.ttc",width=1000,height=700,background_color="#ffffff")
+    w.generate(file_to_wordcloud)                   #加载准备好的文本字符串
+    w.to_file("./testfiles/语音识别故障.png")         #生成词云图片
+    print("执行完毕，图片保存在\nC:\E-Data-File\腾讯课堂\Python入门\PYcharmProject\\venv\\testcode\\testfiles目录下")
 
 '''
-#例2：
-import wordcloud
-txt = "life is short, you need python"
-w = wordcloud.WordCloud(background_color="white")
-w.generate(txt)
-w.to_file("pywcloud.png")
