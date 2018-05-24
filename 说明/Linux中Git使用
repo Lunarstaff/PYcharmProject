@@ -1,5 +1,6 @@
 参考文章：
 https://www.cnblogs.com/duwanjiang/p/5921167.html
+https://blog.csdn.net/five3/article/details/8904635
 ====================================================================================================
 
 1 Linux下Git和GitHub环境的搭建
@@ -37,13 +38,31 @@ https://www.cnblogs.com/duwanjiang/p/5921167.html
 
     最后把本地仓库origin提交到远程的GitHub仓库，使用命令 ”git push origin master“
 
+    新建Git项目并提交到Github
+        mkdir testdir & cd testdir
+        touch README.md
+        git init #初始化一个本地库
+        git add README.md #添加文件到本地仓库
+        git rm README.md #本地倒库内删除
+        git commit -m "first commit" #提交到本地库并备注，此时变更仍在本地。
+        git commit -a  ##自动更新变化的文件，a可以理解为auto
+        git remote add xxx git@github.com:xxx/xxx.git  #增加一个远程服务器的别名。
+        git remote rm xxx   ##删除远程版本库的别名
+        git push -u remotename master #将本地文件提交到Github的remoname版本库中。此时才更新了本地变更到github服务上。
 
 3 从GitHub克隆项目到本地
 
     第一步： 到GitHub的某个仓库，然后复制右边的有个“HTTPS clone url”
 
     第二步： 回到要存放的目录下，使用命令 "git clone https://github.com/chenguolin/scrapy.git"，红色的url只是一个例子
-    （git config --global http.sslVerify false）
+    在Xsheel5上操作时 使用命令：“git clone git@github.com:Lunarstaff/PYcharmProject.git”
+    （需要访问密码，这个是生成密钥时保护密钥的密码为123456）
+
+    git clone git://github.com:xxxx/test.git ##以gitreadonly方式克隆到本地，只可以读
+    git clone git@github.com:xxx/test.git  ##以SSH方式克隆到本地，可以读写
+    git clone https://github.com/xxx/test.git ##以https方式克隆到本地，可以读写
+    git fetch git@github.com:xxx/xxx.git  ##获取到本地但不合并
+    git pull git@github.com:xxx/xxx.git ##获取并合并内容到本地
 
     第三步： 如果本地的版本不是最新的，可以使用命令 “git fetch origin”，origin是本地仓库
 
@@ -72,8 +91,20 @@ https://www.cnblogs.com/duwanjiang/p/5921167.html
 
         2 同步到GitHub上面删除这个分支： git push <本地仓库名> :<github端分支>
 
+    git branch #显示当前分支是master
+    git branch new-feature  #创建分支
+    git checkout new-feature  #切换到新分支
+    vi page_cache.inc.php
+    git add page_cache.inc.php
+    git commit -a -m "added initial version of page cache"
+    git push origin new-feature  ##把分支提交到远程服务器，只是把分支结构和内容提交到远程，并没有发生和主干的合并行为。
 
-
+    合并
+        如果new-feature分支成熟了，觉得有必要合并进master
+        git checkout master  #切换到新主干
+        git merge new-feature  ##把分支合并到主干
+        git branch #显示当前分支是master
+        git push  #此时主干中也合并了new-feature的代码
 
 
 5 常见错误
