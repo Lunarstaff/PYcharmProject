@@ -1,0 +1,190 @@
+参考文章：
+https://www.cnblogs.com/duwanjiang/p/5921167.html
+====================================================================================================
+
+1 Linux下Git和GitHub环境的搭建
+
+    第一步： 安装Git，使用命令 “sudo apt-get install git”
+
+    第二步： 到GitHub上创建GitHub帐号
+
+    第三步： 在Linux中生成ssh key，
+    使用命令 “ssh-keygen -t rsa -C "your_email@youremail.com"”，your_email是你的email
+    （相当于为Linux创建访问GitHub所需要的密钥）
+
+    第四步： 回到github，进入Account Settings，左边选择SSH Keys，Add SSH Key,title随便填，粘贴key。key就是
+    ~/.ssh/id_rsa.pub内容。
+    （在GitHub上将刚才生成的密钥添加进来,添加时需要GitHub账户密码确认）
+
+    第五步： 在Linux中测试ssh key是否成功，使用命令“ssh -T git@github.com”，如果出现
+    You’ve successfully authenticated, but GitHub does not provide shell access 。这就表示已成功连上github。
+
+    第六步： 在Linux中配置Git的配置文件，username和email
+        git config --global user.name "your name" //配置用户名
+        git config --global user.email "your email" //配置email
+
+
+2 利用Git从本地上传到GitHub
+
+    第一步： 进入要所要上传文件的目录输入命令 “git init”
+
+    第二步： 创建一个本地仓库origin，使用命令 “git remote add origin git@github.com:yourName/yourRepo.git”
+    youname是你的GitHub的用户名，yourRepo是你要上传到GitHub的仓库，这是你再GitHub上添加的仓库。
+
+    第三步： 比如你要添加一个文件xxx到本地仓库，使用命令 “git add xxx”，可以使用“git add .”自动判断添加哪些文件
+
+    然后把这个添加提交到本地的仓库，使用命令 ”git commit -m ”说明这次的提交“ “
+
+    最后把本地仓库origin提交到远程的GitHub仓库，使用命令 ”git push origin master“
+
+
+3 从GitHub克隆项目到本地
+
+    第一步： 到GitHub的某个仓库，然后复制右边的有个“HTTPS clone url”
+
+    第二步： 回到要存放的目录下，使用命令 "git clone https://github.com/chenguolin/scrapy.git"，红色的url只是一个例子
+    （git config --global http.sslVerify false）
+
+    第三步： 如果本地的版本不是最新的，可以使用命令 “git fetch origin”，origin是本地仓库
+
+    第四步： 把更新的内容合并到本地分支，可以使用命令 “git merge origin/master”
+
+    如果你不想手动去合并，那么你可以使用： git pull <本地仓库> master // 这个命令可以拉去最新版本并自动合并
+
+
+4 GitHub的分支管理
+
+    创建
+
+        1 创建一个本地分支： git branch <新分支名字>
+
+        2 将本地分支同步到GitHub上面： git push <本地仓库名> <新分支名>
+
+        3 切换到新建立的分支： git checkout <新分支名>
+
+        4 为你的分支加入一个新的远程端： git remote add <远程端名字> <地址>
+
+        5 查看当前仓库有几个分支: git branch
+
+    删除
+
+        1 从本地删除一个分支： git branch -d <分支名称>
+
+        2 同步到GitHub上面删除这个分支： git push <本地仓库名> :<github端分支>
+
+
+
+
+
+5 常见错误
+
+    1 如果出现报错为ERROR: Repository not found.fatal: The remote end hung up unexpectedly
+    则代表你的 origin 的url 链接有误，可能是创建错误，也可能是这个 git@github.com:xxx/new-project.git url
+    指定不正确。重新创建。
+
+
+
+====================================================================================================
+
+git help [--all] [--guides] [--man | --web | --info] [<命令>]
+
+====================================================================================================
+usage: git [--version] [--help] [-C <path>] [-c name=value]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+这些是各种场合常见的 Git 命令：
+
+开始一个工作区（参见：git help tutorial）
+   clone      克隆一个仓库到一个新目录
+   init       创建一个空的 Git 仓库或重新初始化一个已存在的仓库
+
+在当前变更上工作（参见：git help everyday）
+   add        添加文件内容至索引
+   mv         移动或重命名一个文件、目录或符号链接
+   reset      重置当前 HEAD 到指定状态
+   rm         从工作区和索引中删除文件
+
+检查历史和状态（参见：git help revisions）
+   bisect     通过二分查找定位引入 bug 的提交
+   grep       输出和模式匹配的行
+   log        显示提交日志
+   show       显示各种类型的对象
+   status     显示工作区状态
+
+扩展、标记和调校您的历史记录
+   branch     列出、创建或删除分支
+   checkout   切换分支或恢复工作区文件
+   commit     记录变更到仓库
+   diff       显示提交之间、提交和工作区之间等的差异
+   merge      合并两个或更多开发历史
+   rebase     在另一个分支上重新应用提交
+   tag        创建、列出、删除或校验一个 GPG 签名的标签对象
+
+协同（参见：git help workflows）
+   fetch      从另外一个仓库下载对象和引用
+   pull       获取并整合另外的仓库或一个本地分支
+   push       更新远程引用和相关的对象
+
+命令 'git help -a' 和 'git help -g' 显示可用的子命令和一些概念帮助。
+查看 'git help <命令>' 或 'git help <概念>' 以获取给定子命令或概念的
+帮助。
+
+====================================================================================================
+
+用法：git [--version] [--help] [-C <path>] [-c name=value]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+在 '/usr/local/git/libexec/git-core' 下可用的 git 命令
+
+  add                       clone                     fetch                     interpret-trailers        notes                     remote-testsvn            submodule
+  add--interactive          column                    fetch-pack                log                       p4                        repack                    submodule--helper
+  am                        commit                    filter-branch             ls-files                  pack-objects              replace                   svn
+  annotate                  commit-tree               fmt-merge-msg             ls-remote                 pack-redundant            request-pull              symbolic-ref
+  apply                     config                    for-each-ref              ls-tree                   pack-refs                 rerere                    tag
+  archimport                count-objects             format-patch              mailinfo                  patch-id                  reset                     unpack-file
+  archive                   credential                fsck                      mailsplit                 prune                     rev-list                  unpack-objects
+  bisect                    credential-cache          fsck-objects              merge                     prune-packed              rev-parse                 update-index
+  bisect--helper            credential-cache--daemon  gc                        merge-base                pull                      revert                    update-ref
+  blame                     credential-store          get-tar-commit-id         merge-file                push                      rm                        update-server-info
+  branch                    cvsexportcommit           grep                      merge-index               quiltimport               send-email                upload-archive
+  bundle                    cvsimport                 gui                       merge-octopus             read-tree                 send-pack                 upload-pack
+  cat-file                  cvsserver                 gui--askpass              merge-one-file            rebase                    sh-i18n--envsubst         var
+  check-attr                daemon                    hash-object               merge-ours                receive-pack              shell                     verify-commit
+  check-ignore              describe                  help                      merge-recursive           reflog                    shortlog                  verify-pack
+  check-mailmap             diff                      http-backend              merge-resolve             relink                    show                      verify-tag
+  check-ref-format          diff-files                http-fetch                merge-subtree             remote                    show-branch               web--browse
+  checkout                  diff-index                http-push                 merge-tree                remote-ext                show-index                whatchanged
+  checkout-index            diff-tree                 imap-send                 mergetool                 remote-fd                 show-ref                  worktree
+  cherry                    difftool                  index-pack                mktag                     remote-ftp                stage                     write-tree
+  cherry-pick               difftool--helper          init                      mktree                    remote-ftps               stash
+  citool                    fast-export               init-db                   mv                        remote-http               status
+  clean                     fast-import               instaweb                  name-rev                  remote-https              stripspace
+
+命令 'git help -a' 和 'git help -g' 显示可用的子命令和一些概念帮助。
+查看 'git help <命令>' 或 'git help <概念>' 以获取给定子命令或概念的
+帮助。
+
+====================================================================================================
+最常用的 Git 向导有：
+
+   attributes   定义路径的属性
+   everyday     每一天 Git 常用的约 20 条命令
+   glossary     Git 词汇表
+   ignore       忽略指定的未跟踪文件
+   modules      定义子模组属性
+   revisions    指定 Git 的版本和版本范围
+   tutorial     一个 Git 教程（针对 1.5.1 或更新版本）
+   workflows    Git 推荐的工作流概览
+
+命令 'git help -a' 和 'git help -g' 显示可用的子命令和一些概念帮助。
+查看 'git help <命令>' 或 'git help <概念>' 以获取给定子命令或概念的
+帮助。
+
+
+====================================================================================================

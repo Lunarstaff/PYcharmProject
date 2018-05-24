@@ -1,0 +1,41 @@
+参考文章：
+https://blog.csdn.net/u013256816/article/details/54743470
+
+
+源码安装
+
+    -安装依赖的包
+        yum install curl-devel expat-devel gettext-devel openssl-devel zlib-devel gcc perl-ExtUtils-MakeMaker
+
+    -下载git源码并解压
+        目前最新版本下载地址：https://github.com/git/git/releases/tag/v2.11.0
+        解压 tar zxvf git-2.11.0.tar.gz
+        cd git-2.11.0
+
+    -编译安装
+        make prefix=/usr/local/git all
+        make prefix=/usr/local/git install
+
+    -查看git
+        whereis git
+        git –version
+
+    -配置环境变量
+        vim /etc/profile
+        加入export PATH=$PATH:/usr/local/git/bin
+        生效配置文件 source /etc/profile
+
+    -配置git
+
+        1.设置用户名和email
+        [root@zhuzhonghua2-fqawb util]# git config –global user.name “hiddenzzh”
+        [root@zhuzhonghua2-fqawb util]# git config –global user.email “youremail@domain.com”
+        此时$HOME目录下会新建一个.gitconfig文件
+
+        2.为github账号添加SSH keys
+        ssh-keygen -t ras -C “youremail@domain.com”
+        系统会提示key的保存位置（一般是~/.ssh目录）和指定口令，保持默认，连续三次即可
+
+        然后vim打开id_rsa.pub文件，粘贴到github账号管理的添加SSH KEY界面中
+        vim ~/.ssh/id_rsa.pub
+        然后将id_rsa.pub文件中的内容粘贴到gitub的“SSH and GPG keys”中。
