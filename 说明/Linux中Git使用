@@ -63,6 +63,7 @@ https://blog.csdn.net/five3/article/details/8904635
     git clone https://github.com/xxx/test.git ##以https方式克隆到本地，可以读写
     git fetch git@github.com:xxx/xxx.git  ##获取到本地但不合并
     git pull git@github.com:xxx/xxx.git ##获取并合并内容到本地
+    git pull git@github.com:Lunarstaff/PYcharmProject.git
 
     第三步： 如果本地的版本不是最新的，可以使用命令 “git fetch origin”，origin是本地仓库
 
