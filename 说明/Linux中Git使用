@@ -1,6 +1,7 @@
 参考文章：
 https://www.cnblogs.com/duwanjiang/p/5921167.html
 https://blog.csdn.net/five3/article/details/8904635
+http://www.jb51.net/LINUXjishu/457371.html
 ====================================================================================================
 
 1 Linux下Git和GitHub环境的搭建
@@ -106,6 +107,23 @@ https://blog.csdn.net/five3/article/details/8904635
         git merge new-feature  ##把分支合并到主干
         git branch #显示当前分支是master
         git push  #此时主干中也合并了new-feature的代码
+
+    $ git fetch origin master
+    该指令意思是从远程origin仓库的master主分支更新最新的版本到origin/master分支上。
+====================================================================================================
+[root@Lunar12 lunar]# ls
+learnPython  PYcharmProject  spider-v1.0
+[root@Lunar12 lunar]# git fetch git@github.com:Lunarstaff/PYcharmProject.git
+Enter passphrase for key '/root/.ssh/id_rsa':
+remote: Counting objects: 5, done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 5 (delta 3), reused 5 (delta 3), pack-reused 0
+展开对象中: 100% (5/5), 完成.
+来自 github.com:Lunarstaff/PYcharmProject
+ * branch            HEAD       -> FETCH_HEAD
+[root@Lunar12 lunar]# ls
+learnPython  PYcharmProject  spider-v1.0
+====================================================================================================
 
 
 5 常见错误
