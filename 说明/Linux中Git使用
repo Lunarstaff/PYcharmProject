@@ -110,6 +110,12 @@ http://www.jb51.net/LINUXjishu/457371.html
 
     $ git fetch origin master
     该指令意思是从远程origin仓库的master主分支更新最新的版本到origin/master分支上。
+
+
+    后记：有同学可能查了网上的资料，说“git fetch”和“git merge”指令可以合二为一，叫“git pull”，
+    在此强烈建议大家使用分开的指令，因为“git pull”会直接合并，而不会等你确认，如果一旦合并错了，
+    还是比较麻烦的。宁可慢一点，也别重头再来。
+
 ====================================================================================================
 [root@Lunar12 lunar]# ls
 learnPython  PYcharmProject  spider-v1.0
