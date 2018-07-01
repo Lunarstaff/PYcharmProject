@@ -1,0 +1,7 @@
+﻿预期结果：
+root,a1,b1
+root,a1,b2
+root,a1,b3
+root,a2,b4
+root,a2,b5
+root,a3

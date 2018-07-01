@@ -1,0 +1,194 @@
+
+
+定义一些外星人，不同的外星人有不同的颜色和点数。
+
+>>> alien_0 = {'color': 'green', 'points': '5'}
+>>> alien_1 = {'color': 'white', 'points': '6'}
+>>> alien_0['color']
+'green'
+>>> alien_1['points']
+'6'
+
+如果玩家射杀了这个外星人，可以使用下面的代码来确定玩应获得多少个点：
+>>> new_points = alien_0['points']
+>>> print("You just earned " + str(new_points) + " points!")
+You just earned 5 points!
+
+
+字典是一种动态结构，可随时在其中添加键-值对，要添加键-值对时，可依次指定字典名称、用方括号括起的键和相关联的值。
+在外星人信息中添加坐标，在屏幕坐标系中，左上角为原点(0, 0)。
+>>> print(alien_0)
+{'color': 'green', 'points': '5'}
+>>> alien_0['x_position'] = 0
+>>> alien_0['y_position'] = 25
+>>> print(alien_0)
+{'color': 'green', 'points': '5', 'x_position': 0, 'y_position': 25}
+Python 不关系键-值对的添加顺序，只关系键和值的关联关系
+
+随着游戏的进行，需要将外星人的颜色从绿色改变成黄色：
+>>> print("alien_0 is " + alien_0['color'] + '.')
+alien_0 is green.
+>>> alien_0['color'] = 'yellow' #将外星人的颜色从绿色改变成黄色
+>>> print("alien_0 is " + alien_0['color'] + '.')
+alien_0 is yellow.
+
+
+通过修改外星人字典中的值，可改变外星人的行为：
+# 定义一个外星人，其中包含初始的x 坐标和y 坐标，还有速度'medium' 
+>>> alien_0['speed'] = 'medium'
+>>> alien_0
+{'color': 'yellow', 'points': '5', 'x_position': 0, 'y_position': 25, 'speed': 'medium'}
+print('Original x-position: ' + str(alien_0['x_position'])) # 打印x_position 的初始值
+Original x-position: 0
+# 确定外星人应向右移动多远
+if alien_0['speed'] == 'slow':
+    x_increment = 1
+elif alien_0['speed'] == 'medium':
+    x_increment = 2
+else:
+    x_increment = 3
+   
+alien_0['x_position'] = alien_0['x_position'] + x_increment
+print("New x-position: " + str(alien_0['x_position']))
+New x-position: 2
+
+对于字典中不再需要的信息，可使用del 语句将相应的键—值对彻底删除。使用del 语句时，必须指定字典名和要删除的键
+>>> alien_0
+{'color': 'yellow', 'points': '5', 'x_position': 2, 'y_position': 25, 'speed': 'medium'}
+>>> del alien_0['points'] # 从字典alien_0 中删除键'points' 及其值：
+>>> alien_0
+{'color': 'yellow', 'x_position': 2, 'y_position': 25, 'speed': 'medium'}
+
+
+
+遍历字典：
+>>> user_0 = {
+...     'username': 'efemi',
+...     'first': 'enrico',
+...     'last': 'fermi'
+... }
+>>> user_0
+{'username': 'efemi', 'first': 'enrico', 'last': 'fermi'}
+
+>>> for key, value in user_0.items():
+...     print("Key:" + key)
+...     print("Value:" + value)
+...
+Key:username
+Value:efemi
+Key:first
+Value:enrico
+Key:last
+Value:fermi
+
+遍历字典中的所有键：
+>>> user_0
+{'username': 'efemi', 'first': 'enrico', 'last': 'fermi'}
+>>> for key in user_0.keys():
+...     print(key)
+...
+username
+first
+last
+
+>>> for key in user_0.keys():
+...     print(key.title())
+...
+Username
+First
+Last
+
+方法.keys()返回一个列表，包含字典中所有键。
+
+
+按顺序遍历字典中的所有键
+>>> favorite_languages
+{'jen': 'python', 'sarah': 'c', 'edward': 'ruby', 'phil': 'python'}
+>>> for name in sorted(favorite_languages.keys()):
+...     print(name.title() + ", thank U for taking the poll.")
+...
+Edward, thank U for taking the poll.
+Jen, thank U for taking the poll.
+Phil, thank U for taking the poll.
+Sarah, thank U for taking the poll.
+
+遍历字典中所有的值：
+.values() 方法返回一个值列表，不包含任何键。
+
+字典列表：在列表中存储字典
+>>> alien_0 = {'color': 'green', 'points': 5}
+>>> alien_1 = {'color': 'yellow', 'points': 10}
+>>> alien_2 = {'color': 'red', 'points': 15}
+>>> aliens = [alien_0, alien_1, alien_2] # 字典组成的列表
+>>> for alien in aliens:
+...     print(alien)
+...
+{'color': 'green', 'points': 5}
+{'color': 'yellow', 'points': 10}
+{'color': 'red', 'points': 15}
+
+自动生成30个外星人：
+>>> import random # 使用random.randint(1,20) 生成1到20之间的整数作为分数
+>>> aliens = []
+>>> for alien_number in range(30): 
+...     new_alien = {'color': 'green', 'points': random.randint(1,20), 'speed': 'slow'}
+...     aliens.append(new_alien)
+
+>>> for alien in aliens[:5]:
+...     print(alien)
+...
+{'color': 'green', 'points': 7, 'speed': 'slow'}
+{'color': 'green', 'points': 14, 'speed': 'slow'}
+{'color': 'green', 'points': 19, 'speed': 'slow'}
+{'color': 'green', 'points': 1, 'speed': 'slow'}
+{'color': 'green', 'points': 7, 'speed': 'slow'}
+	
+>>> print("一共有" + str(len(aliens)) + "个外星人。")
+一共有30个外星人。
+
+# 将前三个外星人变成黄色，速度设置为中等，分值设置为10：
+>>> for alien in aliens[:3]:
+...     if alien['color'] == 'green':
+...             alien['color'] = 'yellow'
+...             alien['speed'] = 'medium'
+...             alien['points'] = 10
+...
+>>> for alien in aliens[:5]:
+...     print(alien)
+...
+{'color': 'yellow', 'points': 10, 'speed': 'medium'}
+{'color': 'yellow', 'points': 10, 'speed': 'medium'}
+{'color': 'yellow', 'points': 10, 'speed': 'medium'}
+{'color': 'green', 'points': 1, 'speed': 'slow'}
+{'color': 'green', 'points': 7, 'speed': 'slow'}
+
+
+列表字典：在字典中存储列表信息
+>>> favorite_language = {
+...     'jen': ['python', 'ruby'],
+...     'sarah': ['c'],
+...     'edward': ['ruby', 'go'],
+...     'phil': ['python', 'haskell']
+... }
+>>> favorite_language
+{'jen': ['python', 'ruby'], 'sarah': ['c'], 'edward': ['ruby', 'go'], 'phil': ['python', 'haskell']}
+
+遍历：
+>>> for name,languages in favorite_language.items():
+...     print(name.title() + "'s favorite language are:")
+...     for language in languages:
+...             print(language.title())
+...
+Jen's favorite language are:
+Python
+Ruby
+Sarah's favorite language are:
+C
+Edward's favorite language are:
+Ruby
+Go
+Phil's favorite language are:
+Python
+Haskell
+
+在字典中存储字典：
