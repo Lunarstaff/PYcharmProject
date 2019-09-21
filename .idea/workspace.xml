@@ -1,0 +1,979 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e252bede-21ea-4bbd-96aa-b438a6e9ab53" name="Default" comment="20190921&#10;--更新了README.md说明文件，主要写了markdown的语法&#10;--添加了样例图片">
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/image/badu_logo.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/image/zhiliao_logo.png" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="PYcharmProject" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/venv/testcode/git-test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="461">
+              <caret line="241" column="14" selection-start-line="241" selection-start-column="14" selection-end-line="241" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/readme.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="228">
+                <caret line="98" column="4" lean-forward="true" selection-start-line="98" selection-start-column="4" selection-end-line="98" selection-end-column="4" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/venv/testcode/daydayup.py" />
+        <option value="$PROJECT_DIR$/venv/testcode/strtest.py" />
+        <option value="$PROJECT_DIR$/venv/testcode/timetest.py" />
+        <option value="$PROJECT_DIR$/venv/testcode/TextProBarV1.py" />
+        <option value="$PROJECT_DIR$/venv/pyvenv.cfg" />
+        <option value="$PROJECT_DIR$/venv/testcode/bilibili-home.html" />
+        <option value="$PROJECT_DIR$/venv/testcode/requests-framv1.py" />
+        <option value="$PROJECT_DIR$/venv/testcode/reptile-request" />
+        <option value="$PROJECT_DIR$/venv/testcode/Robots协议" />
+        <option value="$PROJECT_DIR$/venv/testcode/jd-request.py" />
+        <option value="$PROJECT_DIR$/venv/testcode/TextProBarV3.py" />
+        <option value="$PROJECT_DIR$/venv/testcode/test.py" />
+        <option value="$PROJECT_DIR$/venv/testcode/amazon-request.py" />
+        <option value="$PROJECT_DIR$/venv/testcode/Requests-baidu-search.py" />
+        <option value="$PROJECT_DIR$/venv/testcode/Requests-baidu-picture.py" />
+        <option value="$PROJECT_DIR$/venv/testcode/Requests-IP-search.py" />
+        <option value="$PROJECT_DIR$/venv/testcode/beautifulsoup-jiexi.py" />
+        <option value="$PROJECT_DIR$/venv/testcode/BeautifulSoup-Lib-items.html" />
+        <option value="$PROJECT_DIR$/venv/testcode/if-test.py" />
+        <option value="$PROJECT_DIR$/venv/testcode/异常记录" />
+        <option value="$PROJECT_DIR$/说明/异常记录" />
+        <option value="$PROJECT_DIR$/venv/testcode/files-test.py" />
+        <option value="$PROJECT_DIR$/venv/testcode/data-txt.txt" />
+        <option value="$PROJECT_DIR$/venv/testcode/testfiles/data-txt.txt" />
+        <option value="$PROJECT_DIR$/说明/手动安装第三方库.txt" />
+        <option value="$PROJECT_DIR$/venv/testcode/词频统计/四川航空.txt" />
+        <option value="$PROJECT_DIR$/venv/testcode/新时代中国特色社会主义.txt" />
+        <option value="$PROJECT_DIR$/venv/testcode/关于实施乡村振兴战略的意见.txt" />
+        <option value="$PROJECT_DIR$/image/语音识别故障.txt" />
+        <option value="$PROJECT_DIR$/venv/testcode/testfiles/语音识别故障.txt" />
+        <option value="$PROJECT_DIR$/venv/testcode/wordcloud-test.py" />
+        <option value="$PROJECT_DIR$/说明/在Linux中安装git" />
+        <option value="$PROJECT_DIR$/说明/Linux中的Python环境" />
+        <option value="$PROJECT_DIR$/说明/Linux中Git使用" />
+        <option value="$PROJECT_DIR$/venv/testcode/dict-test.py" />
+        <option value="$PROJECT_DIR$/venv/testcode/class-test/class-test.py" />
+        <option value="$PROJECT_DIR$/venv/testcode/testfiles/file_io_test.py" />
+        <option value="$PROJECT_DIR$/venv/testcode/html_parser/html_parser.py" />
+        <option value="$PROJECT_DIR$/venv/testcode/case_generate/case_genarate.py" />
+        <option value="$PROJECT_DIR$/venv/testcode/html_parser/root.html" />
+        <option value="$PROJECT_DIR$/venv/testcode/case_generate/case_generate.py" />
+        <option value="$PROJECT_DIR$/venv/testcode/case_generate/思维导图生成案例.html" />
+        <option value="$PROJECT_DIR$/venv/testcode/case_generate/case_generatev2.0.py" />
+        <option value="$PROJECT_DIR$/venv/testcode/kaishamima.py" />
+        <option value="$PROJECT_DIR$/venv/testcode/git-test.py" />
+        <option value="$PROJECT_DIR$/readme.md" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="36" />
+    <option name="y" value="12" />
+    <option name="width" value="974" />
+    <option name="height" value="1047" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="PYcharmProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PYcharmProject" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PYcharmProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PYcharmProject" type="462c0819:PsiDirectoryNode" />
+              <item name="image" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <expand>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="PYcharmProject" type="cbb8eebc:String" user="PYcharmProject" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../迅雷下载/小鸟酱 - 小草莓第2季完整版/小鸟酱 - 小草莓第2季4T大尺度完整版/图片/a (11).jpg" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <console-settings module-name="PYcharmProject" is-module-sdk="true">
+        <option name="useSoftWraps" value="true" />
+        <option name="myUseModuleSdk" value="true" />
+        <option name="myModuleName" value="PYcharmProject" />
+      </console-settings>
+    </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\E-Data-File\腾讯课堂\Python入门\PYcharmProject\venv\testcode\case_generate" />
+      <recent name="C:\E-Data-File\腾讯课堂\Python入门\PYcharmProject\venv\testcode\html_parser" />
+      <recent name="C:\E-Data-File\腾讯课堂\Python入门\PYcharmProject\venv\testcode\class-test" />
+      <recent name="C:\E-Data-File\腾讯课堂\Python入门\PYcharmProject\venv\testcode" />
+      <recent name="C:\E-Data-File\腾讯课堂\Python入门\PYcharmProject\说明" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\E-Data-File\腾讯课堂\Python入门\PYcharmProject\venv\testcode\html_parser" />
+      <recent name="C:\E-Data-File\腾讯课堂\Python入门\PYcharmProject\venv\testcode\testfiles" />
+      <recent name="C:\E-Data-File\腾讯课堂\Python入门\PYcharmProject\image" />
+      <recent name="C:\E-Data-File\腾讯课堂\Python入门\PYcharmProject\venv\testcode\词频统计" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.git-test">
+    <configuration name="Unnamed" type="PythonConfigurationType" factoryName="Python">
+      <module name="PYcharmProject" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\E-Data-File\腾讯课堂\Python入门\PYcharmProject\venv\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/venv/testcode" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/venv/testcode/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="case_generate" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="PYcharmProject" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/venv/testcode/case_generate" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/venv/testcode/case_generate/case_generate.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="case_generatev2.0" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="PYcharmProject" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/venv/testcode/case_generate" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/venv/testcode/case_generate/case_generatev2.0.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="git-test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="PYcharmProject" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/venv/testcode" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/venv/testcode/git-test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="html_parser" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="PYcharmProject" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/venv/testcode/html_parser" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/venv/testcode/html_parser/html_parser.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="kaishamima" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="PYcharmProject" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/venv/testcode" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/venv/testcode/kaishamima.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.Unnamed" />
+      <item itemvalue="Python.html_parser" />
+      <item itemvalue="Python.case_generate" />
+      <item itemvalue="Python.case_generatev2.0" />
+      <item itemvalue="Python.git-test" />
+      <item itemvalue="Python.kaishamima" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.git-test" />
+        <item itemvalue="Python.kaishamima" />
+        <item itemvalue="Python.case_generatev2.0" />
+        <item itemvalue="Python.case_generate" />
+        <item itemvalue="Python.html_parser" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="StructureViewFactory">
+    <option name="AUTOSCROLL_MODE" value="false" />
+    <option name="ACTIVE_ACTIONS" value=",SHOW_INHERITED,SHOW_FIELDS" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\lywte\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e252bede-21ea-4bbd-96aa-b438a6e9ab53" name="Default" comment="" />
+      <created>1522411281308</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1522411281308</updated>
+    </task>
+    <task id="LOCAL-00001" summary="删除tst.py文件">
+      <created>1522976224631</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1522976224631</updated>
+    </task>
+    <task id="LOCAL-00002" summary="删除tst.py文件">
+      <created>1522977410747</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1522977410747</updated>
+    </task>
+    <task id="LOCAL-00003" summary="删除tst.py文件">
+      <created>1524394188652</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1524394188652</updated>
+    </task>
+    <task id="LOCAL-00004" summary="删除tst.py文件">
+      <created>1524394225404</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1524394225404</updated>
+    </task>
+    <task id="LOCAL-00005" summary="git test 修改组合数据类型">
+      <created>1524397761700</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1524397761700</updated>
+    </task>
+    <task id="LOCAL-00006" summary="修改文件最后一行">
+      <created>1524404861263</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1524404861263</updated>
+    </task>
+    <task id="LOCAL-00007" summary="加了一个b">
+      <created>1524405278454</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1524405278454</updated>
+    </task>
+    <task id="LOCAL-00008" summary="增加了说明文件存放目录;&#10;新增了Pycharm-github 使用说明文件;">
+      <created>1524405932160</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1524405932160</updated>
+    </task>
+    <task id="LOCAL-00009" summary="20180425-Jieba中文分词库学习（git-test.py未完）&#10;安装了Jieba库&#10;更新了pip库&#10;&#10;增加了 示例文本文件：&#10;1、London.txt&#10;2、真实和美.txt">
+      <created>1524669389649</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1524669389649</updated>
+    </task>
+    <task id="LOCAL-00010" summary="20180428&#10;-修改了文件“真实和美.txt”的编码格式为“utf-8”&#10;-第6节结束，清空了git-test.py文件&#10;-第6节结束，增加了“真实和美.py”文件&#10;-增加了“异常记录”文件到“说明”目录（本次解决了打开非utf-8编码的文本文件报异常的问题）">
+      <created>1524925918691</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1524925918691</updated>
+    </task>
+    <task id="LOCAL-00011" summary="20180428&#10;-增加了“pycharm.jpg”封面图片">
+      <created>1524928920160</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1524928920160</updated>
+    </task>
+    <task id="LOCAL-00012" summary="20180428&#10;-增加了“pycharm.jpg”封面图片&#10;-增加了“README.me”文件">
+      <created>1524929374041</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1524929374041</updated>
+    </task>
+    <task id="LOCAL-00013" summary="20180506&#10;-记录github密码更改">
+      <created>1525570229139</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1525570229139</updated>
+    </task>
+    <task id="LOCAL-00014" summary="20180506&#10;-第二周单元测评">
+      <created>1525617850427</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1525617850427</updated>
+    </task>
+    <task id="LOCAL-00015" summary="20180512&#10;-重置git-test.py文件&#10;-新增file-test.py文件">
+      <created>1526140389384</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1526140389384</updated>
+    </task>
+    <task id="LOCAL-00016" summary="20180512&#10;-重置git-test.py文件&#10;-新增file-test.py文件&#10;20180513&#10;-漏提交文件：&#10;    文本处理测试用文件：files-test.txt、txt.txt、文本.xlsx">
+      <created>1526179239527</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1526179239527</updated>
+    </task>
+    <task id="LOCAL-00017" summary="20180513&#10;-新增data-txt.txt文件&#10;-在文本.xlsx中增加data-txt数据页&#10;-在git-test.py中完成了根据数据自动绘图">
+      <created>1526190649736</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1526190649736</updated>
+    </task>
+    <task id="LOCAL-00018" summary="20180513&#10;-修改了data-txt.txt文件数据&#10;-在“文本.xlsx”中增加了新的data-txt数据&#10;-增加了AutoTraceDraw.py文件&#10;-增加了csv-test.py文件&#10;-安装了wordcloud库&#10;-增加了wordcloud-test.py文件&#10;-增加了“手动安装第三方库.txt”文件，说明了安装方法">
+      <created>1526223025613</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1526223025613</updated>
+    </task>
+    <task id="LOCAL-00019" summary="20180515&#10;-结束了wordcloud&#10;-练习了几个词云例子，在wordcloud-test.py文件中">
+      <created>1526393434413</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1526393434413</updated>
+    </task>
+    <task id="LOCAL-00020" summary="20180516&#10;-程序设计方法实例：体育竞技模拟：git-test.py">
+      <created>1526483065550</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1526483065550</updated>
+    </task>
+    <task id="LOCAL-00021" summary="20180517&#10;-增加了上次写的simNSports-test.py&#10;-在文本.xlsx中增加了“pip -h”页&#10;-第8单元快完了，还有OS没看。&#10;-准备去完成第7单元作业">
+      <created>1526568035946</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1526568035946</updated>
+    </task>
+    <task id="LOCAL-00022" summary="20180519&#10;-增加了BathInstall.py，自动安装第三方库脚本&#10;-增加了os库的学习，os-lib-test.py&#10;-增加了pip-install-test.py，安装第三方库的方法&#10;-增加了“从数据处理到人工智能.py”，了解Python的生态环境&#10;-清空了git-test.py">
+      <created>1526660993183</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1526660993184</updated>
+    </task>
+    <task id="LOCAL-00023" summary="20180520-结束了课程">
+      <created>1526820580143</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1526820580143</updated>
+    </task>
+    <task id="LOCAL-00024" summary="20180524&#10;-在Linux中安装Git&#10;-添加了Git的使用说明文件">
+      <created>1527172701687</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1527172701687</updated>
+    </task>
+    <task id="LOCAL-00025" summary="20180524&#10;-在Linux中安装Git&#10;-添加了Git的使用说明文件（更新一版）">
+      <created>1527173687429</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1527173687429</updated>
+    </task>
+    <task id="LOCAL-00026" summary="20180527&#10;-增加“Linux中Git使用”文本文件&#10;-增加“Linux中的Python环境”文本文件">
+      <created>1527426815739</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1527426815739</updated>
+    </task>
+    <task id="LOCAL-00027" summary="20180527&#10;-增加“Linux中Git使用”文本文件&#10;-增加“Linux中的Python环境”文本文件">
+      <created>1527427829527</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1527427829527</updated>
+    </task>
+    <task id="LOCAL-00028" summary="20180527&#10;-增加“Linux中Git使用”文本文件&#10;-增加“Linux中的Python环境”文本文件">
+      <created>1527428208451</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1527428208451</updated>
+    </task>
+    <task id="LOCAL-00029" summary="20180701&#10;-增加生成案例项目：&#10;-完成了框架&#10;-接下来要用freemind写的.mm文件导出的html做解析。">
+      <created>1530452932943</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1530452932943</updated>
+    </task>
+    <task id="LOCAL-00030" summary="20180703&#10;找到了读取中文文件的方法，case_generatev2.0.py&#10;开始使用BS4解析.mm文件生成的.html文件。">
+      <created>1530624442173</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1530624442173</updated>
+    </task>
+    <task id="LOCAL-00031" summary="20180703&#10;找到了读取中文文件的方法，case_generatev2.0.py&#10;开始使用BS4解析.mm文件生成的.html文件。">
+      <created>1530628212383</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1530628212383</updated>
+    </task>
+    <task id="LOCAL-00032" summary="20180708&#10;Python基础课程结束，考试的时候才发现基础很重要呀。&#10;考试题目做完了，也又重新回顾了一下基础内容。">
+      <created>1531059129949</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1531059129949</updated>
+    </task>
+    <task id="LOCAL-00033" summary="20190921&#10;--更新了README.md说明文件，主要写了markdown的语法">
+      <created>1569035879458</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1569035879458</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
+    <servers />
+  </component>
+  <component name="TodoView" selected-index="2">
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <are-modules-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="32" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13780358" />
+      <window_info id="Structure" order="1" weight="0.24815725" />
+      <window_info id="Favorites" order="2" side_tool="true" weight="0.32923833" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.5369588" weight="0.36489606" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49779737" weight="0.39673278" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49779737" weight="0.36677814" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.51372755" side_tool="true" visible="true" weight="0.21507761" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.48771498" weight="0.32448035" />
+      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.48627242" visible="true" weight="0.21507761" />
+      <window_info anchor="bottom" x="965" y="170" width="945" height="738" id="Python Console" order="10" sideWeight="0.47788697" type="WINDOWED" weight="0.39838338" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="SHOW_OTHER_BRANCHES" value="true" />
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="加了一个b" />
+    <MESSAGE value="增加了说明文件存放目录;&#10;新增了Pycharm-github 使用说明文件;" />
+    <MESSAGE value="20180425-Jieba中文分词库学习（git-test.py未完）&#10;安装了Jieba库&#10;更新了pip库&#10;&#10;增加了 示例文本文件：&#10;1、London.txt&#10;2、真实和美.txt" />
+    <MESSAGE value="20180428&#10;-修改了文件“真实和美.txt”的编码格式为“utf-8”&#10;-第6节结束，清空了git-test.py文件&#10;-第6节结束，增加了“真实和美.py”文件&#10;-增加了“异常记录”文件到“说明”目录（本次解决了打开非utf-8编码的文本文件报异常的问题）" />
+    <MESSAGE value="20180428&#10;-增加了“pycharm.jpg”封面图片" />
+    <MESSAGE value="20180428&#10;-增加了“pycharm.jpg”封面图片&#10;-增加了“README.me”文件" />
+    <MESSAGE value="20180506&#10;-记录github密码更改" />
+    <MESSAGE value="20180506&#10;-第二周单元测评" />
+    <MESSAGE value="20180512&#10;-重置git-test.py文件&#10;-新增file-test.py文件" />
+    <MESSAGE value="20180512&#10;-重置git-test.py文件&#10;-新增file-test.py文件&#10;20180513&#10;-漏提交文件：&#10;    文本处理测试用文件：files-test.txt、txt.txt、文本.xlsx" />
+    <MESSAGE value="20180513&#10;-新增data-txt.txt文件&#10;-在文本.xlsx中增加data-txt数据页&#10;-在git-test.py中完成了根据数据自动绘图" />
+    <MESSAGE value="20180513&#10;-修改了data-txt.txt文件数据&#10;-在“文本.xlsx”中增加了新的data-txt数据&#10;-增加了AutoTraceDraw.py文件&#10;-增加了csv-test.py文件&#10;-安装了wordcloud库&#10;-增加了wordcloud-test.py文件&#10;-增加了“手动安装第三方库.txt”文件，说明了安装方法" />
+    <MESSAGE value="20180515&#10;-结束了wordcloud&#10;-练习了几个词云例子，在wordcloud-test.py文件中" />
+    <MESSAGE value="20180516&#10;-程序设计方法实例：体育竞技模拟：git-test.py" />
+    <MESSAGE value="20180517&#10;-增加了上次写的simNSports-test.py&#10;-在文本.xlsx中增加了“pip -h”页&#10;-第8单元快完了，还有OS没看。&#10;-准备去完成第7单元作业" />
+    <MESSAGE value="20180519&#10;-增加了BathInstall.py，自动安装第三方库脚本&#10;-增加了os库的学习，os-lib-test.py&#10;-增加了pip-install-test.py，安装第三方库的方法&#10;-增加了“从数据处理到人工智能.py”，了解Python的生态环境&#10;-清空了git-test.py" />
+    <MESSAGE value="20180520-结束了课程" />
+    <MESSAGE value="20180524&#10;-在Linux中安装Git&#10;-添加了Git的使用说明文件" />
+    <MESSAGE value="20180524&#10;-在Linux中安装Git&#10;-添加了Git的使用说明文件（更新一版）" />
+    <MESSAGE value="20180527&#10;-增加“Linux中Git使用”文本文件&#10;-增加“Linux中的Python环境”文本文件" />
+    <MESSAGE value="20180701&#10;-增加生成案例项目：&#10;-完成了框架&#10;-接下来要用freemind写的.mm文件导出的html做解析。" />
+    <MESSAGE value="20180703&#10;找到了读取中文文件的方法，case_generatev2.0.py&#10;开始使用BS4解析.mm文件生成的.html文件。" />
+    <MESSAGE value="20180708&#10;Python基础课程结束，考试的时候才发现基础很重要呀。&#10;考试题目做完了，也又重新回顾了一下基础内容。" />
+    <MESSAGE value="20190921&#10;--更新了README.md说明文件，主要写了markdown的语法" />
+    <MESSAGE value="20190921&#10;--更新了README.md说明文件，主要写了markdown的语法&#10;--添加了样例图片" />
+    <option name="LAST_COMMIT_MESSAGE" value="20190921&#10;--更新了README.md说明文件，主要写了markdown的语法&#10;--添加了样例图片" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/venv/testcode/simNSprots-test.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/testcode/pip-install-test.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/testcode/os-lib-test.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/testcode/从数据处理到人工智能.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/testcode/TextProBarV1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="16" lean-forward="true" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/testcode/holland_radar.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../迅雷下载/小鸟酱 - 小草莓第2季完整版/小鸟酱 - 小草莓第2季4T大尺度完整版/图片/b (24).jpg" />
+    <entry file="file://$PROJECT_DIR$/../../../迅雷下载/小鸟酱 - 小草莓第2季完整版/小鸟酱 - 小草莓第2季4T大尺度完整版/图片/a (1).jpg" />
+    <entry file="file://$PROJECT_DIR$/../../../迅雷下载/小鸟酱 - 小草莓第2季完整版/小鸟酱 - 小草莓第2季4T大尺度完整版/图片/a (10).jpg" />
+    <entry file="file://$PROJECT_DIR$/../../../迅雷下载/小鸟酱 - 小草莓第2季完整版/小鸟酱 - 小草莓第2季4T大尺度完整版/图片/a (11).jpg" />
+    <entry file="file://$PROJECT_DIR$/venv/testcode/RoseDraw.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/testcode/requests-framv1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="40" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/testcode/testfiles/haizeiwang_page.html" />
+    <entry file="file://$PROJECT_DIR$/说明/在Linux中安装git">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/说明/手动安装第三方库.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/说明/Linux中的Python环境">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="665">
+          <caret line="35" column="10" selection-start-line="35" selection-start-column="10" selection-end-line="35" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/说明/Linux中Git使用">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="608">
+          <caret line="110" column="29" lean-forward="true" selection-start-line="110" selection-start-column="29" selection-end-line="110" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/testcode/dict-test.py" />
+    <entry file="file://$PROJECT_DIR$/venv/testcode/dict-test.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/testcode/class-test/class-test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="85" lean-forward="true" selection-start-line="85" selection-end-line="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/testcode/testfiles/data-txt.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/testcode/testfiles/files-test.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="5" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/testcode/testfiles/txt.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/testcode/testfiles/file_io_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/testcode/html_parser/html_parser.py" />
+    <entry file="file://$PROJECT_DIR$/venv/testcode/case_generate/case_genarate.py" />
+    <entry file="file://$PROJECT_DIR$/venv/testcode/html_parser/root.xmind">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="1667" column="10" lean-forward="true" selection-start-line="1667" selection-start-column="10" selection-end-line="1667" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/testcode/html_parser/root.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="6" lean-forward="true" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files/Python36/Lib/site-packages/bs4/element.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="736" selection-start-line="736" selection-end-line="736" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/testcode/case_generate/case_generate.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="71" column="23" selection-start-line="71" selection-start-column="23" selection-end-line="71" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/testcode/case_generate/root.mm.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/testcode/case_generate/root.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/testcode/case_generate/思维导图生成案例.mm.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="6" lean-forward="true" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/testcode/case_generate/思维导图生成案例.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/testcode/case_generate/case_generatev2.0.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files/Python36/Lib/codecs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6289">
+          <caret line="331" selection-start-line="331" selection-end-line="331" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/testcode/kaishamima.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="449">
+          <caret line="25" column="14" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/testcode/hamlet.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-437">
+          <caret line="10" column="9" lean-forward="true" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/testcode/真实和美.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="25" column="12" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/testcode/strtest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="20" lean-forward="true" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/testcode/jieba-test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/testcode/HollandRadarDraw.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/testcode/hanoi-test.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/testcode/BathInstall.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/testcode/AutoTraceDraw.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/testcode/amazon-request.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/testcode/wordcloud-test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-453">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/image/pycharm.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/testcode/git-test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="461">
+          <caret line="241" column="14" selection-start-line="241" selection-start-column="14" selection-end-line="241" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="228">
+            <caret line="98" column="4" lean-forward="true" selection-start-line="98" selection-start-column="4" selection-end-line="98" selection-end-column="4" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.18273543" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
