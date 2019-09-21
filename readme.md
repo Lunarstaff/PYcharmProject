@@ -106,7 +106,19 @@
     2、斜体粗体字
  
 
++ PyCharm 2019.1.4 (Community Edition) 这个版本还有很多markdown语法不支持，  
+可以参考[mdeditor][参考3]
+
+```
+PyCharm 2019.1.4 (Community Edition)
+Build #PC-191.8026.44, built on July 30, 2019
+JRE: 11.0.2+9-b159.64 amd64
+JVM: OpenJDK 64-Bit Server VM by JetBrains s.r.o
+Windows 10 10.0
+```
+
 
 >---
 [参考1]: https://segmentfault.com/markdown/
 [参考2]: https://www.jianshu.com/p/13b3366f0260
+[参考3]: https://www.mdeditor.com/ "www.mdeditor.com"

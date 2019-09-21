@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e252bede-21ea-4bbd-96aa-b438a6e9ab53" name="Default" comment="20190921&#10;--更新了README.md说明文件，主要写了markdown的语法&#10;--添加了样例图片">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/badu_logo.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/zhiliao_logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/markdown_editor/mdeditor.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,22 +16,13 @@
     <favorites_list name="PYcharmProject" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/venv/testcode/git-test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="461">
-              <caret line="241" column="14" selection-start-line="241" selection-start-column="14" selection-end-line="241" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/readme.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="228">
-                <caret line="98" column="4" lean-forward="true" selection-start-line="98" selection-start-column="4" selection-end-line="98" selection-end-column="4" />
+              <first_editor relative-caret-position="414">
+                <caret line="118" lean-forward="true" selection-start-line="118" selection-end-line="118" />
               </first_editor>
               <second_editor />
             </state>
@@ -100,6 +91,7 @@
         <option value="$PROJECT_DIR$/venv/testcode/case_generate/case_generatev2.0.py" />
         <option value="$PROJECT_DIR$/venv/testcode/kaishamima.py" />
         <option value="$PROJECT_DIR$/venv/testcode/git-test.py" />
+        <option value="$PROJECT_DIR$/venv/markdown_editor/mdeditor.md" />
         <option value="$PROJECT_DIR$/readme.md" />
       </list>
     </option>
@@ -126,7 +118,7 @@
             <path>
               <item name="PYcharmProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="PYcharmProject" type="462c0819:PsiDirectoryNode" />
-              <item name="image" type="462c0819:PsiDirectoryNode" />
+              <item name="venv" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -579,7 +571,14 @@
       <option name="project" value="LOCAL" />
       <updated>1569035879458</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="20190921&#10;--更新了README.md说明文件，主要写了markdown的语法&#10;--添加了样例图片">
+      <created>1569035945715</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1569035945715</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TodoView" selected-index="2">
@@ -593,7 +592,7 @@
     <frame x="-8" y="32" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13780358" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.13780358" />
       <window_info id="Structure" order="1" weight="0.24815725" />
       <window_info id="Favorites" order="2" side_tool="true" weight="0.32923833" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -603,9 +602,9 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49779737" weight="0.36677814" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.51372755" side_tool="true" visible="true" weight="0.21507761" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5142555" side_tool="true" visible="true" weight="0.21507761" />
       <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.48771498" weight="0.32448035" />
-      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.48627242" visible="true" weight="0.21507761" />
+      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.48574445" visible="true" weight="0.21507761" />
       <window_info anchor="bottom" x="965" y="170" width="945" height="738" id="Python Console" order="10" sideWeight="0.47788697" type="WINDOWED" weight="0.39838338" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -692,9 +691,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="20190921&#10;--更新了README.md说明文件，主要写了markdown的语法&#10;--添加了样例图片" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/venv/testcode/simNSprots-test.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/venv/testcode/pip-install-test.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -950,11 +946,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/venv/markdown_editor/mdeditor.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="231">
+            <caret line="176" column="4" lean-forward="true" selection-start-line="176" selection-start-column="4" selection-end-line="176" selection-end-column="4" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/readme.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="228">
-            <caret line="98" column="4" lean-forward="true" selection-start-line="98" selection-start-column="4" selection-end-line="98" selection-end-column="4" />
+          <first_editor relative-caret-position="414">
+            <caret line="118" lean-forward="true" selection-start-line="118" selection-end-line="118" />
           </first_editor>
           <second_editor />
         </state>
