@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e252bede-21ea-4bbd-96aa-b438a6e9ab53" name="Default" comment="20190921&#10;--更新了README.md说明文件，主要写了markdown的语法&#10;--添加了样例图片">
-      <change afterPath="$PROJECT_DIR$/venv/markdown_editor/mdeditor.md" afterDir="false" />
+    <list default="true" id="e252bede-21ea-4bbd-96aa-b438a6e9ab53" name="Default" comment="20190921&#10;--添加了md在线编辑参考www.mdeditor.com&#10;--有部分md语法，PyCharm当前版本还不支持">
+      <change afterPath="$PROJECT_DIR$/venv/进程和线程/multiprocess_001.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/进程和线程/多进程和多线程-Note.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,15 +18,20 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/readme.md">
+        <entry file="file://$PROJECT_DIR$/venv/进程和线程/多进程和多线程-Note.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="414">
-                <caret line="118" lean-forward="true" selection-start-line="118" selection-end-line="118" />
+              <first_editor relative-caret-position="212">
+                <caret line="25" column="17" lean-forward="true" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
               </first_editor>
               <second_editor />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/venv/进程和线程/multiprocess_001.py">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -93,13 +98,15 @@
         <option value="$PROJECT_DIR$/venv/testcode/git-test.py" />
         <option value="$PROJECT_DIR$/venv/markdown_editor/mdeditor.md" />
         <option value="$PROJECT_DIR$/readme.md" />
+        <option value="$PROJECT_DIR$/venv/markdown_editor/github_emoji.md" />
+        <option value="$PROJECT_DIR$/venv/进程和线程/多进程和多线程-Note.md" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="36" />
-    <option name="y" value="12" />
-    <option name="width" value="974" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="396" />
+    <option name="y" value="40" />
+    <option name="width" value="1531" />
     <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -108,6 +115,17 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <expand>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="PYcharmProject" type="cbb8eebc:String" user="PYcharmProject" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -120,16 +138,11 @@
               <item name="PYcharmProject" type="462c0819:PsiDirectoryNode" />
               <item name="venv" type="462c0819:PsiDirectoryNode" />
             </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <expand>
             <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="PYcharmProject" type="cbb8eebc:String" user="PYcharmProject" />
+              <item name="PYcharmProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PYcharmProject" type="462c0819:PsiDirectoryNode" />
+              <item name="venv" type="462c0819:PsiDirectoryNode" />
+              <item name="进程和线程" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -309,10 +322,10 @@
     </configuration>
     <list>
       <item itemvalue="Python.Unnamed" />
-      <item itemvalue="Python.html_parser" />
       <item itemvalue="Python.case_generate" />
       <item itemvalue="Python.case_generatev2.0" />
       <item itemvalue="Python.git-test" />
+      <item itemvalue="Python.html_parser" />
       <item itemvalue="Python.kaishamima" />
     </list>
     <recent_temporary>
@@ -578,7 +591,21 @@
       <option name="project" value="LOCAL" />
       <updated>1569035945715</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="20190921&#10;--添加了md在线编辑参考www.mdeditor.com&#10;--有部分md语法，PyCharm当前版本还不支持">
+      <created>1569074712742</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1569074712742</updated>
+    </task>
+    <task id="LOCAL-00036" summary="20190921&#10;--添加了md在线编辑参考www.mdeditor.com&#10;--有部分md语法，PyCharm当前版本还不支持">
+      <created>1569075207910</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1569075207910</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TodoView" selected-index="2">
@@ -589,10 +616,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="32" width="1936" height="1056" extended-state="6" />
+    <frame x="348" y="40" width="1579" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.13780358" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.3304721" />
       <window_info id="Structure" order="1" weight="0.24815725" />
       <window_info id="Favorites" order="2" side_tool="true" weight="0.32923833" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -602,9 +629,9 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49779737" weight="0.36677814" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5142555" side_tool="true" visible="true" weight="0.21507761" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.51528955" side_tool="true" visible="true" weight="0.21724524" />
       <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.48771498" weight="0.32448035" />
-      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.48574445" visible="true" weight="0.21507761" />
+      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.48471048" visible="true" weight="0.21724524" />
       <window_info anchor="bottom" x="965" y="170" width="945" height="738" id="Python Console" order="10" sideWeight="0.47788697" type="WINDOWED" weight="0.39838338" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -663,7 +690,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="加了一个b" />
     <MESSAGE value="增加了说明文件存放目录;&#10;新增了Pycharm-github 使用说明文件;" />
     <MESSAGE value="20180425-Jieba中文分词库学习（git-test.py未完）&#10;安装了Jieba库&#10;更新了pip库&#10;&#10;增加了 示例文本文件：&#10;1、London.txt&#10;2、真实和美.txt" />
     <MESSAGE value="20180428&#10;-修改了文件“真实和美.txt”的编码格式为“utf-8”&#10;-第6节结束，清空了git-test.py文件&#10;-第6节结束，增加了“真实和美.py”文件&#10;-增加了“异常记录”文件到“说明”目录（本次解决了打开非utf-8编码的文本文件报异常的问题）" />
@@ -688,18 +714,10 @@
     <MESSAGE value="20180708&#10;Python基础课程结束，考试的时候才发现基础很重要呀。&#10;考试题目做完了，也又重新回顾了一下基础内容。" />
     <MESSAGE value="20190921&#10;--更新了README.md说明文件，主要写了markdown的语法" />
     <MESSAGE value="20190921&#10;--更新了README.md说明文件，主要写了markdown的语法&#10;--添加了样例图片" />
-    <option name="LAST_COMMIT_MESSAGE" value="20190921&#10;--更新了README.md说明文件，主要写了markdown的语法&#10;--添加了样例图片" />
+    <MESSAGE value="20190921&#10;--添加了md在线编辑参考www.mdeditor.com&#10;--有部分md语法，PyCharm当前版本还不支持" />
+    <option name="LAST_COMMIT_MESSAGE" value="20190921&#10;--添加了md在线编辑参考www.mdeditor.com&#10;--有部分md语法，PyCharm当前版本还不支持" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/venv/testcode/pip-install-test.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/testcode/os-lib-test.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/testcode/从数据处理到人工智能.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/venv/testcode/TextProBarV1.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
@@ -946,6 +964,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/venv/markdown_editor/github_emoji.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="189">
+            <caret line="9" column="11" lean-forward="true" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/venv/markdown_editor/mdeditor.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -959,8 +987,19 @@
     <entry file="file://$PROJECT_DIR$/readme.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="414">
-            <caret line="118" lean-forward="true" selection-start-line="118" selection-end-line="118" />
+          <first_editor relative-caret-position="-252" />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/进程和线程/multiprocess_001.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/进程和线程/多进程和多线程-Note.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="212">
+            <caret line="25" column="17" lean-forward="true" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
           </first_editor>
           <second_editor />
         </state>
