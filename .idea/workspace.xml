@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e252bede-21ea-4bbd-96aa-b438a6e9ab53" name="Default" comment="20190921&#10;--添加了md在线编辑参考www.mdeditor.com&#10;--有部分md语法，PyCharm当前版本还不支持">
-      <change afterPath="$PROJECT_DIR$/venv/进程和线程/multiprocess_001.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv/进程和线程/多进程和多线程-Note.md" afterDir="false" />
+    <list default="true" id="e252bede-21ea-4bbd-96aa-b438a6e9ab53" name="Default" comment="20190927&#10;--进程和线程-001">
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/Lunar12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/进程和线程/image/multiprocess_002_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/进程和线程/image/multiprocess_002_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/进程和线程/multiprocess_002.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/进程和线程/multiprocess_003.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/进程和线程/subprocess_001.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv/进程和线程/suprocess_002.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/进程和线程/multiprocess_001.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/进程和线程/multiprocess_001.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/进程和线程/多进程和多线程-Note.md" beforeDir="false" afterPath="$PROJECT_DIR$/venv/进程和线程/多进程和多线程-Note.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,22 +23,22 @@
     <favorites_list name="PYcharmProject" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/venv/进程和线程/多进程和多线程-Note.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="212">
-                <caret line="25" column="17" lean-forward="true" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
+              <first_editor relative-caret-position="104">
+                <caret line="264" lean-forward="true" selection-start-line="264" selection-end-line="264" />
+                <folding>
+                  <element signature="e#26#61#0" expanded="true" />
+                  <element signature="e#26#58#0" expanded="true" />
+                  <element signature="e#29#71#0" expanded="true" />
+                </folding>
               </first_editor>
               <second_editor />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/venv/进程和线程/multiprocess_001.py">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -51,10 +58,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/venv/testcode/daydayup.py" />
-        <option value="$PROJECT_DIR$/venv/testcode/strtest.py" />
-        <option value="$PROJECT_DIR$/venv/testcode/timetest.py" />
-        <option value="$PROJECT_DIR$/venv/testcode/TextProBarV1.py" />
         <option value="$PROJECT_DIR$/venv/pyvenv.cfg" />
         <option value="$PROJECT_DIR$/venv/testcode/bilibili-home.html" />
         <option value="$PROJECT_DIR$/venv/testcode/requests-framv1.py" />
@@ -99,14 +102,20 @@
         <option value="$PROJECT_DIR$/venv/markdown_editor/mdeditor.md" />
         <option value="$PROJECT_DIR$/readme.md" />
         <option value="$PROJECT_DIR$/venv/markdown_editor/github_emoji.md" />
+        <option value="$PROJECT_DIR$/venv/进程和线程/multiprocess_001.py" />
+        <option value="$PROJECT_DIR$/venv/进程和线程/multiprocess_002.py" />
+        <option value="$PROJECT_DIR$/venv/进程和线程/image/subprocess_001.py" />
+        <option value="$PROJECT_DIR$/venv/进程和线程/image/suprocess_002.py" />
+        <option value="$PROJECT_DIR$/venv/进程和线程/suprocess_002.py" />
+        <option value="$PROJECT_DIR$/venv/进程和线程/multiprocess_003.py" />
         <option value="$PROJECT_DIR$/venv/进程和线程/多进程和多线程-Note.md" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="396" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="953" />
     <option name="y" value="40" />
-    <option name="width" value="1531" />
+    <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -155,7 +164,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../迅雷下载/小鸟酱 - 小草莓第2季完整版/小鸟酱 - 小草莓第2季4T大尺度完整版/图片/a (11).jpg" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.smartKeys" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -167,18 +176,19 @@
     </option>
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\E-Data-File\腾讯课堂\Python入门\PYcharmProject\venv\进程和线程" />
+      <recent name="C:\E-Data-File\腾讯课堂\Python入门\PYcharmProject\venv\testcode\html_parser" />
+      <recent name="C:\E-Data-File\腾讯课堂\Python入门\PYcharmProject\venv\testcode\testfiles" />
+      <recent name="C:\E-Data-File\腾讯课堂\Python入门\PYcharmProject\image" />
+      <recent name="C:\E-Data-File\腾讯课堂\Python入门\PYcharmProject\venv\testcode\词频统计" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\E-Data-File\腾讯课堂\Python入门\PYcharmProject\venv\testcode\case_generate" />
       <recent name="C:\E-Data-File\腾讯课堂\Python入门\PYcharmProject\venv\testcode\html_parser" />
       <recent name="C:\E-Data-File\腾讯课堂\Python入门\PYcharmProject\venv\testcode\class-test" />
       <recent name="C:\E-Data-File\腾讯课堂\Python入门\PYcharmProject\venv\testcode" />
       <recent name="C:\E-Data-File\腾讯课堂\Python入门\PYcharmProject\说明" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\E-Data-File\腾讯课堂\Python入门\PYcharmProject\venv\testcode\html_parser" />
-      <recent name="C:\E-Data-File\腾讯课堂\Python入门\PYcharmProject\venv\testcode\testfiles" />
-      <recent name="C:\E-Data-File\腾讯课堂\Python入门\PYcharmProject\image" />
-      <recent name="C:\E-Data-File\腾讯课堂\Python入门\PYcharmProject\venv\testcode\词频统计" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -193,7 +203,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.git-test">
+  <component name="RunManager" selected="Python.multiprocess_003">
     <configuration name="Unnamed" type="PythonConfigurationType" factoryName="Python">
       <module name="PYcharmProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -215,7 +225,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="case_generate" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="multiprocess_001" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PYcharmProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -223,11 +233,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/venv/testcode/case_generate" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/venv/进程和线程" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/venv/testcode/case_generate/case_generate.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/venv/进程和线程/multiprocess_001.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -236,7 +246,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="case_generatev2.0" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="multiprocess_002" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PYcharmProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -244,32 +254,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/venv/testcode/case_generate" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/venv/进程和线程" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/venv/testcode/case_generate/case_generatev2.0.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="git-test" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="PYcharmProject" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/venv/testcode" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/venv/testcode/git-test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/venv/进程和线程/multiprocess_002.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -278,7 +267,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="html_parser" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="multiprocess_003" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PYcharmProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -286,11 +275,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/venv/testcode/html_parser" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/venv/进程和线程" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/venv/testcode/html_parser/html_parser.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/venv/进程和线程/multiprocess_003.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -299,7 +288,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="kaishamima" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="subprocess_001" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PYcharmProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -307,11 +296,32 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/venv/testcode" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/venv/进程和线程/image" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/venv/testcode/kaishamima.py" />
+      <option name="SCRIPT_NAME" value="C:\E-Data-File\腾讯课堂\Python入门\PYcharmProject\venv\进程和线程\subprocess_001.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="suprocess_002" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="PYcharmProject" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/venv/进程和线程" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/venv/进程和线程/suprocess_002.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -322,19 +332,19 @@
     </configuration>
     <list>
       <item itemvalue="Python.Unnamed" />
-      <item itemvalue="Python.case_generate" />
-      <item itemvalue="Python.case_generatev2.0" />
-      <item itemvalue="Python.git-test" />
-      <item itemvalue="Python.html_parser" />
-      <item itemvalue="Python.kaishamima" />
+      <item itemvalue="Python.multiprocess_001" />
+      <item itemvalue="Python.multiprocess_002" />
+      <item itemvalue="Python.subprocess_001" />
+      <item itemvalue="Python.suprocess_002" />
+      <item itemvalue="Python.multiprocess_003" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.git-test" />
-        <item itemvalue="Python.kaishamima" />
-        <item itemvalue="Python.case_generatev2.0" />
-        <item itemvalue="Python.case_generate" />
-        <item itemvalue="Python.html_parser" />
+        <item itemvalue="Python.multiprocess_003" />
+        <item itemvalue="Python.suprocess_002" />
+        <item itemvalue="Python.subprocess_001" />
+        <item itemvalue="Python.multiprocess_002" />
+        <item itemvalue="Python.multiprocess_001" />
       </list>
     </recent_temporary>
   </component>
@@ -605,7 +615,14 @@
       <option name="project" value="LOCAL" />
       <updated>1569075207910</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="20190927&#10;--进程和线程-001">
+      <created>1569599228273</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1569599228273</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TodoView" selected-index="2">
@@ -616,22 +633,22 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="348" y="40" width="1579" height="1047" extended-state="0" />
+    <frame x="-8" y="32" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.3304721" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.32939914" />
       <window_info id="Structure" order="1" weight="0.24815725" />
       <window_info id="Favorites" order="2" side_tool="true" weight="0.32923833" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.5369588" weight="0.36489606" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.687962" visible="true" weight="0.4223947" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49779737" weight="0.39673278" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49779737" weight="0.36677814" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.51528955" side_tool="true" visible="true" weight="0.21724524" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.312038" side_tool="true" visible="true" weight="0.4223947" />
       <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.48771498" weight="0.32448035" />
-      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.48471048" visible="true" weight="0.21724524" />
+      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.48390558" weight="0.21724524" />
       <window_info anchor="bottom" x="965" y="170" width="945" height="738" id="Python Console" order="10" sideWeight="0.47788697" type="WINDOWED" weight="0.39838338" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -690,7 +707,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="增加了说明文件存放目录;&#10;新增了Pycharm-github 使用说明文件;" />
     <MESSAGE value="20180425-Jieba中文分词库学习（git-test.py未完）&#10;安装了Jieba库&#10;更新了pip库&#10;&#10;增加了 示例文本文件：&#10;1、London.txt&#10;2、真实和美.txt" />
     <MESSAGE value="20180428&#10;-修改了文件“真实和美.txt”的编码格式为“utf-8”&#10;-第6节结束，清空了git-test.py文件&#10;-第6节结束，增加了“真实和美.py”文件&#10;-增加了“异常记录”文件到“说明”目录（本次解决了打开非utf-8编码的文本文件报异常的问题）" />
     <MESSAGE value="20180428&#10;-增加了“pycharm.jpg”封面图片" />
@@ -715,22 +731,10 @@
     <MESSAGE value="20190921&#10;--更新了README.md说明文件，主要写了markdown的语法" />
     <MESSAGE value="20190921&#10;--更新了README.md说明文件，主要写了markdown的语法&#10;--添加了样例图片" />
     <MESSAGE value="20190921&#10;--添加了md在线编辑参考www.mdeditor.com&#10;--有部分md语法，PyCharm当前版本还不支持" />
-    <option name="LAST_COMMIT_MESSAGE" value="20190921&#10;--添加了md在线编辑参考www.mdeditor.com&#10;--有部分md语法，PyCharm当前版本还不支持" />
+    <MESSAGE value="20190927&#10;--进程和线程-001" />
+    <option name="LAST_COMMIT_MESSAGE" value="20190927&#10;--进程和线程-001" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/venv/testcode/TextProBarV1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="16" lean-forward="true" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/testcode/holland_radar.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../迅雷下载/小鸟酱 - 小草莓第2季完整版/小鸟酱 - 小草莓第2季4T大尺度完整版/图片/b (24).jpg" />
-    <entry file="file://$PROJECT_DIR$/../../../迅雷下载/小鸟酱 - 小草莓第2季完整版/小鸟酱 - 小草莓第2季4T大尺度完整版/图片/a (1).jpg" />
-    <entry file="file://$PROJECT_DIR$/../../../迅雷下载/小鸟酱 - 小草莓第2季完整版/小鸟酱 - 小草莓第2季4T大尺度完整版/图片/a (10).jpg" />
     <entry file="file://$PROJECT_DIR$/../../../迅雷下载/小鸟酱 - 小草莓第2季完整版/小鸟酱 - 小草莓第2季4T大尺度完整版/图片/a (11).jpg" />
     <entry file="file://$PROJECT_DIR$/venv/testcode/RoseDraw.py">
       <provider selected="true" editor-type-id="text-editor" />
@@ -993,13 +997,63 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/venv/进程和线程/multiprocess_001.py">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="19" column="22" lean-forward="true" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/进程和线程/multiprocess_002.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="e#22#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/进程和线程/subprocess_001.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/进程和线程/suprocess_002.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files/Python36/Lib/site-packages/pythonwin/pywin/default.cfg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="162" column="14" lean-forward="true" selection-start-line="162" selection-start-column="14" selection-end-line="162" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/进程和线程/multiprocess_003.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="11" column="20" lean-forward="true" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+          <folding>
+            <element signature="e#22#64#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/venv/进程和线程/多进程和多线程-Note.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="212">
-            <caret line="25" column="17" lean-forward="true" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
+          <first_editor relative-caret-position="104">
+            <caret line="264" lean-forward="true" selection-start-line="264" selection-end-line="264" />
+            <folding>
+              <element signature="e#26#61#0" expanded="true" />
+              <element signature="e#26#58#0" expanded="true" />
+              <element signature="e#29#71#0" expanded="true" />
+            </folding>
           </first_editor>
           <second_editor />
         </state>
