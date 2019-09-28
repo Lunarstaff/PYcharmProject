@@ -285,5 +285,9 @@ Windows下调用失败了，要先考虑是不是pickle失败了
 - `umltiprocessing`模块可实现跨平台的多进程
 - 进程间通信是通过`Queue`、`Pipes`等实现的。
 
+
+
 ***
 [<sup>参考<sup>❶</sup></sup>]: https://www.liaoxuefeng.com/wiki/1016959663602400/1017627212385376
+
+

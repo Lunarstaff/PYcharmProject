@@ -105,6 +105,10 @@
     1、脚标[<sup>参考2</sup>][参考2]  
     2、斜体粗体字
  
++ emoji[网址](https://www.webfx.com/tools/emoji-cheat-sheet/ "emoji")
+中国国旗：  
+:cn:
+
 
 + PyCharm 2019.1.4 (Community Edition) 这个版本还有很多markdown语法不支持，  
 可以参考[mdeditor][参考3]

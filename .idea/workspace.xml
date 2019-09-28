@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e252bede-21ea-4bbd-96aa-b438a6e9ab53" name="Default" comment="20190928&#10;--进程和线程-002">
+    <list default="true" id="e252bede-21ea-4bbd-96aa-b438a6e9ab53" name="Default" comment="20190928&#10;--进程和线程-002&#10;--勘误：&#10;第19行：### 1、`Unix/Linux`操作系统的`for()`系统&#10;改为：### 1、`Unix/Linux`操作系统的`for()`系统">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/进程和线程/多进程和多线程-Note.md" beforeDir="false" afterPath="$PROJECT_DIR$/venv/进程和线程/多进程和多线程-Note.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,7 +16,32 @@
     <favorites_list name="PYcharmProject" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375" />
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/venv/进程和线程/多进程和多线程-Note.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="293">
+                <caret line="288" lean-forward="true" selection-start-line="288" selection-end-line="288" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/readme.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="356">
+                <caret line="110" selection-start-line="110" selection-end-line="110" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -73,7 +100,6 @@
         <option value="$PROJECT_DIR$/venv/testcode/kaishamima.py" />
         <option value="$PROJECT_DIR$/venv/testcode/git-test.py" />
         <option value="$PROJECT_DIR$/venv/markdown_editor/mdeditor.md" />
-        <option value="$PROJECT_DIR$/readme.md" />
         <option value="$PROJECT_DIR$/venv/markdown_editor/github_emoji.md" />
         <option value="$PROJECT_DIR$/venv/进程和线程/multiprocess_001.py" />
         <option value="$PROJECT_DIR$/venv/进程和线程/multiprocess_002.py" />
@@ -82,6 +108,7 @@
         <option value="$PROJECT_DIR$/venv/进程和线程/suprocess_002.py" />
         <option value="$PROJECT_DIR$/venv/进程和线程/multiprocess_003.py" />
         <option value="$PROJECT_DIR$/venv/进程和线程/多进程和多线程-Note.md" />
+        <option value="$PROJECT_DIR$/readme.md" />
       </list>
     </option>
   </component>
@@ -131,7 +158,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../迅雷下载/小鸟酱 - 小草莓第2季完整版/小鸟酱 - 小草莓第2季4T大尺度完整版/图片/a (11).jpg" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.smartKeys" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -596,7 +623,14 @@
       <option name="project" value="LOCAL" />
       <updated>1569664926249</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="20190928&#10;--进程和线程-002&#10;--勘误：&#10;第19行：### 1、`Unix/Linux`操作系统的`for()`系统&#10;改为：### 1、`Unix/Linux`操作系统的`for()`系统">
+      <created>1569667435153</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1569667435153</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TodoView" selected-index="2">
@@ -608,10 +642,12 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="32" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.32893348" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.32893348" />
       <window_info id="Structure" order="1" weight="0.24815725" />
       <window_info id="Favorites" order="2" side_tool="true" weight="0.32923833" />
+      <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.687962" weight="0.4223947" />
@@ -680,7 +716,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="20180428&#10;-修改了文件“真实和美.txt”的编码格式为“utf-8”&#10;-第6节结束，清空了git-test.py文件&#10;-第6节结束，增加了“真实和美.py”文件&#10;-增加了“异常记录”文件到“说明”目录（本次解决了打开非utf-8编码的文本文件报异常的问题）" />
     <MESSAGE value="20180428&#10;-增加了“pycharm.jpg”封面图片" />
     <MESSAGE value="20180428&#10;-增加了“pycharm.jpg”封面图片&#10;-增加了“README.me”文件" />
     <MESSAGE value="20180506&#10;-记录github密码更改" />
@@ -705,7 +740,8 @@
     <MESSAGE value="20190921&#10;--添加了md在线编辑参考www.mdeditor.com&#10;--有部分md语法，PyCharm当前版本还不支持" />
     <MESSAGE value="20190927&#10;--进程和线程-001" />
     <MESSAGE value="20190928&#10;--进程和线程-002" />
-    <option name="LAST_COMMIT_MESSAGE" value="20190928&#10;--进程和线程-002" />
+    <MESSAGE value="20190928&#10;--进程和线程-002&#10;--勘误：&#10;第19行：### 1、`Unix/Linux`操作系统的`for()`系统&#10;改为：### 1、`Unix/Linux`操作系统的`for()`系统" />
+    <option name="LAST_COMMIT_MESSAGE" value="20190928&#10;--进程和线程-002&#10;--勘误：&#10;第19行：### 1、`Unix/Linux`操作系统的`for()`系统&#10;改为：### 1、`Unix/Linux`操作系统的`for()`系统" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/../../../迅雷下载/小鸟酱 - 小草莓第2季完整版/小鸟酱 - 小草莓第2季4T大尺度完整版/图片/a (11).jpg" />
@@ -961,14 +997,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/readme.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-252" />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/venv/进程和线程/multiprocess_001.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
@@ -1020,13 +1048,18 @@
     <entry file="file://$PROJECT_DIR$/venv/进程和线程/多进程和多线程-Note.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="104">
-            <caret line="264" lean-forward="true" selection-start-line="264" selection-end-line="264" />
-            <folding>
-              <element signature="e#26#61#0" expanded="true" />
-              <element signature="e#26#58#0" expanded="true" />
-              <element signature="e#29#71#0" expanded="true" />
-            </folding>
+          <first_editor relative-caret-position="293">
+            <caret line="288" lean-forward="true" selection-start-line="288" selection-end-line="288" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="356">
+            <caret line="110" selection-start-line="110" selection-end-line="110" />
           </first_editor>
           <second_editor />
         </state>
