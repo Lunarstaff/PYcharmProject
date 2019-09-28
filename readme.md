@@ -107,7 +107,9 @@
  
 + emoji[网址](https://www.webfx.com/tools/emoji-cheat-sheet/ "emoji")
 中国国旗：  
-:cn:
+:cn:  
+晴天：  
+:sunny:
 
 
 + PyCharm 2019.1.4 (Community Edition) 这个版本还有很多markdown语法不支持，  
