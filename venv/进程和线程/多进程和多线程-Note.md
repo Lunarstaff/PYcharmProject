@@ -285,7 +285,225 @@ Windows下调用失败了，要先考虑是不是pickle失败了
 - `umltiprocessing`模块可实现跨平台的多进程
 - 进程间通信是通过`Queue`、`Pipes`等实现的。
 
+## 三、多线程
+### 1、概念
+- 进程是由若干线程组成的，一个进程至少有一个线程
+- Python的线程模块：
+    + `_thread`模块和`threading`模块
+    + `_thread`是低级模块，`threading`是高级模块，对`_thread`进行了封装
+### 2、启动一个线程
+- 启动一个线程就是把一个函数传入并创建`Thread`实例，然后调用`start()`开始执行，如下[例](./multithreading_001.py, "./multithreading_001.py")：
+    ```python
+    # multithreading_001.py
+    
+    import time, threading
+    
+    # 线程要执行的内容：
+    def loop():
+        print("正在执行线程{}".format(threading.current_thread().name))
+        n = 0
+        while n < 5:
+            n = n + 1
+            print("正在执行的线程{0}>>>{1}".format(threading.current_thread().name, n))
+            time.sleep(1)
+        print("线程{}执行完毕".format(threading.current_thread().name))
+    
+    if __name__ == "__main__":
+        print("线程{}正在执行".format(threading.current_thread().name))
+    
+        # 创建第二个线程
+        t = threading.Thread(target=loop, name="Loop()")
+        t.start()
+        t.join()
+        print("线程{}执行完毕".format(threading.current_thread().name))
+    ```
+    执行结果如下：
+    ```
+    线程MainThread正在执行
+    正在执行线程Loop()
+    正在执行的线程Loop()>>>1
+    正在执行的线程Loop()>>>2
+    正在执行的线程Loop()>>>3
+    正在执行的线程Loop()>>>4
+    正在执行的线程Loop()>>>5
+    线程Loop()执行完毕
+    线程MainThread执行完毕
+    ```
+    - 任何进程默认就会启动一个线程，我们把该线程称为主线程，
+    - 主线程又可以启动新的线程，
+    - Python的`threading`模块有个`current_thread()`函数，它返回当前线程的实例。
+    - 主线程实例名称是`MainThread`，子线程的名称在创建时指定
+    - 线程名称只用来打印，显示用，没有其他意义
+    - 如果不给子线程指定名称，Python会自动给线程命名为`Thread-1`，`Thread-2`，...
+    
+### 3、锁 Lock
+- 多进程中，同一个变量各自有一份拷贝存在于每个进程中，互不影响
+- 多线程中，所有的变量都由所有线程共享，所以任何一个变量都可以被任何一个线程修改
+- 线程之间共享数据最大的危险在于多个线程同时改一个变量，把内容改乱了
+- 下面[例子](./multithreading_002.py "./multithreading_002.py")演示了多个线程同时操作一个变量：
+    ```python
+    # multithreading_002.py
+    import time, threading
+    
+    # balance为全局变量
+    balance = 0
+    
+    
+    # 修改balance值
+    def change_balance(n):
+        global balance
+        # 对balance进行先+n再-n的操作，预期结果仍然为0
+        balance = balance + n
+        balance = balance - n
+    
+    
+    # 线程任务
+    def run_thread(n):
+        # 线程中调用change_balance 10万次
+        for i in range(100000):
+            change_balance(n)
+    
+    
+    # 主函数
+    if __name__ == "__main__":
+        # 创建第一个子线程，执行子进程时+-balance值为5
+        t1 = threading.Thread(target=run_thread, args=(5,))
+        # 创建第二个子线程，执行子进程时+-balance值为8
+        t2 = threading.Thread(target=run_thread, args=(8,))
+        # 启动线程
+        t1.start()
+        t2.start()
+        t1.join()
+        t2.join()
+    
+        # 执行完毕打印balance值
+        print(balance)
+    ```
+- 上面的例子定义了一个共享变量`balance`，初始值为`0`，并且启动两个线程，先存后取，理论上结果应该为`0`
+，但是由于线程的调度是由操作系统决定的，当t1、t2交替执行时，只要循环次数足够多，`balance`的结果就
+不一定是`0`了，是因为修改`balance`需要多条语句，在执行这几条语句时线程可能中断，从而导致多个线程
+把同一个对象的内容改乱了。
 
+- 如果要确保`balance`计算正确，就需要给`change_balance()`上一把锁，当某个线程开始执行
+`change_balance()`时，称该线程获得了锁，此时其他线程不能同时执行`change_balance()`，
+只能等待，直到锁被释放后获得该锁后才能改。由于锁只有一个，无论多少线程，同一时刻最多只有一个线程
+持有该锁，所以不会造成修改的冲突。通过`threading.Lock()`创建一个锁。
+
+- 修改上面线程任务内容[如下](./multithreading_003.py "./multithreading_003.py")：
+    ```python
+    # multithreading_003.py
+    import time, threading
+    
+    # balance为全局变量
+    balance = 0
+    
+    # 实例化一个Lock对象
+    lock = threading.Lock()
+    
+    
+    # 修改balance值
+    def change_balance(n):
+        global balance
+        # 对balance进行先+n再-n的操作，预期结果仍然为0
+        balance = balance + n
+        balance = balance - n
+    
+    
+    # 线程任务
+    def run_thread(n):
+        # 线程中调用change_balance 10万次
+        for i in range(100000):
+            # 先获取锁
+            lock.acquire()
+            try:
+                # 修改数据
+                change_balance(n)
+            finally:
+                # 释放锁
+                lock.release()
+    
+    
+    # 主函数
+    if __name__ == "__main__":
+        # 创建第一个子线程，执行子进程时+-balance值为5
+        t1 = threading.Thread(target=run_thread, args=(5,))
+        # 创建第二个子线程，执行子进程时+-balance值为8
+        t2 = threading.Thread(target=run_thread, args=(8,))
+        # 启动线程
+        t1.start()
+        t2.start()
+        t1.join()
+        t2.join()
+    
+        # 执行完毕打印balance值
+        print(balance)
+    ```
+- 当多个线程同时执行`lock.acquire()`时，只有一个线程能成功获取锁，然后继续执行，其他线程就继续等待
+直到获得锁为止。
+- 获得锁的线程用完后一定要释放锁，否则那些等待锁的线程将永远等待下去，成为死线程，用`try...finally`
+来确保锁一定会被释放。
+
+- 锁确保了某段关键代码只能由一个线程从头到尾完整地执行，但是阻止了多线程并发执行，包含锁的某段代码只能以
+单线程模式执行。由于可以存在多个锁，不同的线程持有不同的锁，并试图获取对方持有的锁时会造成死锁，导致多个
+线程全部挂起，既不能执行也无法结束，只能靠操作系统强制终止。
+
+### 4、ThreadLocal
+- 什么是`ThreadLocal`？
+>`ThreadLocal`是一个线程内部的存储类，可以在指定线程内存储数据，数据存储以后只有指定线程可以
+得到存储数据。`ThreadLocal`提供了线程内存储变量的能力，这些变量不同之处在于每一个线程读取的变量是对应的
+互相独立的。
+
+- 为什么要使用`ThreadLocal`？
+>❶ 在多线程环境中，每一个线程都可以使用所属进程的全局变量。如果一个线程对全局变量进行了修改，将会影响到
+其他所有线程对全局变量的计算操作，从而出现数据混乱。为了避免多个线程对变量进行修改，引入了线程同步机制，
+通过互斥锁、条件变量或者读写锁来控制对全局变量的访问。  
+❷ 只用全局变量并不能满足多线程环境的需求，很多时候线程还需要自己的私有数据，这些数据对其他线程来说是不可
+见的。因此线程中也可以使用局部变量，局部变量只有线程自身可以访问，同一个进程下的其他线程不可访问。  
+❸ 有时候使用局部变量不太方便（在函数调用的时候[传参](./threadlocal_001.py "./threadlocal_001.py")
+很麻烦），因此Python提供了`ThreadLocal`变量，它本身是一个全局变量，但是每个线程却可以利用它来保存属
+于自己的私有数据，这些私有数据对其他线程也是不可见的。`ThreadLocal`真正做到了线程之间的数据隔离。
+>>下面[例子](./threadlocal_002.py "./threadlocal_002.py")展示了使用`ThreadLocal`实现线程之间的数据隔离:
+    
+    # threadlocal_002.py
+    # 下面例子展示了使用`ThreadLocal`实现线程之间的数据隔离
+    
+    import threading
+    
+    
+    # 全局的ThreadLocal对象：
+    local_school = threading.local()
+    
+    
+    def process_student():
+        # 获取当前线程关联的student
+        std = local_school.student
+        print("你好{}（在线程{}中）".format(std, threading.current_thread().name))
+    
+    
+    def process_thread(name):
+        # 绑定ThreadLocal的student:
+        local_school.student = name
+        process_student()
+    
+    
+    # 主函数
+    if __name__ == '__main__':
+        t1 = threading.Thread(target=process_thread, args=("A-std", ), name="1")
+        t2 = threading.Thread(target=process_thread, args=("B-std", ), name="2")
+    
+        t1.start()
+        t2.start()
+        t1.join()
+        t2.join()
+
+>>输出为：
+
+    你好A-std（在线程1中）
+    你好B-std（在线程2中）
+
+- 全局变量`local_school`就是一个`ThreadLocal`对象，每个`Thread`对它都可以读写`student`属性，但互不影
+响。上面示例中每一个线程都可以通过`local_school.x`获取自己独有的数据，并且每个线程读取到的`local_school.x`
+都不同，真正做到线程之间的隔离。
 
 ***
 [<sup>参考<sup>❶</sup></sup>]: https://www.liaoxuefeng.com/wiki/1016959663602400/1017627212385376
