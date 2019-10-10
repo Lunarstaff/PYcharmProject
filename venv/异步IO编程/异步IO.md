@@ -21,5 +21,61 @@
 - 下面的[例子](./coroutine_001.py "./coroutine_001.py")展示了生产者生产消息后
 直接通过`yield`跳转到消费者开始执行，待消费者执行完毕后，切换回生产者继续生产：
 ```python
+# coroutine_001.py
+
+
+def consumer():
+    r = ""
+    while True:
+        n = yield r
+        if not n:
+            return
+        print("【消费者】正在消费{}".format(n))
+        r = "200 OK"
+
+
+def produce(c):
+    c.send(None)
+    n = 0
+    while n < 5:
+        n = n + 1
+        print("【生产者】正在生产{}".format(n))
+        r = c.send(n)
+        print("【生产者】消费者返回{}".format(r))
+    c.close()
+
+
+# 主函数
+if __name__ == "__main__":
+    c = consumer()
+    produce(c)
 
 ```
+执行结果：
+```
+【生产者】正在生产1
+【消费者】正在消费1
+【生产者】消费者返回200 OK
+【生产者】正在生产2
+【消费者】正在消费2
+【生产者】消费者返回200 OK
+【生产者】正在生产3
+【消费者】正在消费3
+【生产者】消费者返回200 OK
+【生产者】正在生产4
+【消费者】正在消费4
+【生产者】消费者返回200 OK
+【生产者】正在生产5
+【消费者】正在消费5
+【生产者】消费者返回200 OK
+```
+注意到`consumer`函数是一个`generator`，把一个consumer传入produce后：
+1. 首先调用`c.send(None)`启动生成器；
+2. 然后，一旦生产了东西，通过`c.send(n)`切换到consumer执行；
+3. consumer通过`yield`拿到消息，处理，又通过`yield`把结果传回；
+4. produce拿到consumer处理的结果，继续生产下一条消息；
+5. produce决定不生产了，通过`c.close()`关闭consumer，整个过程结束。
+
+整个流程无锁，由一个线程执行，`produce`和`consumer`协作完成任务，所以称为“协程”，而非线程的抢占式多任务。
+子程序就是协程的一种特例。
+
